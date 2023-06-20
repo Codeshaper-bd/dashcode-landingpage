@@ -915,6 +915,9 @@ r
 .con-pt-50{
     padding-top: 50px;
 }
+.sec-shp-pt-pb{
+    padding: 110px 0px 200px;
+}
 .section-title-50{
     margin-bottom: 50px;
 }
@@ -925,7 +928,7 @@ r
     line-height: 140%;
     color: var(--white);
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
 
 }
@@ -955,7 +958,7 @@ r
     font-size: 18px;
     line-height: 27px;
     opacity: 0.9;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 .com-title .section-sub-title{
     padding-top: 35px;
@@ -1028,10 +1031,20 @@ r
     position: relative;
 
 }
+.z-index-3{
+    z-index: 3;
+}
 /* width */
 .width-250px{
     width: 250px;
 }
+
+/* shape */
+.bottom-shape{
+    position: absolute;
+    width: 100%;
+}
+
 /*==========Header CSS Start==========*/
 .header-area {
     background: var(--primary);
@@ -1458,13 +1471,13 @@ to {
 
 
 /*==========App-area CSS Start==========*/
-.app-area .app-sidebar-nav {
+.app-sidebar-nav {
     border-right: 1px dashed #e1e3ea;
     width: 238px;
     max-width: 100%;
     padding-right:40px ;
 }
-.app-area .app-sidebar-nav .nav .nav-link {
+.app-sidebar-nav .nav .nav-link {
     font-weight: 500;
     font-size: 20px;
     padding: 16px;
@@ -1473,12 +1486,12 @@ to {
 
 }
 
-.app-area .app-sidebar-nav .nav-pills .nav-link.active, 
-.app-area .app-sidebar-nav  .nav-pills .show>.nav-link {
+.app-sidebar-nav .nav-pills .nav-link.active, 
+ .app-sidebar-nav  .nav-pills .show>.nav-link {
     color: var(--primary);
     background-color: var(--off-white);
 }
-.app-area .app-sidebar-nav .nav .nav-link a{
+ .app-sidebar-nav .nav .nav-link a{
     display: flex;
     align-items: center;
     color: #5e6278;
@@ -1489,7 +1502,10 @@ to {
     background: #E5F9FF;
     border-radius: 4px;
 }
-
+.app-sidebar-content{
+    flex: 1;
+    padding-left: 40px;
+}
 
 /* 
 .app-area .filter-mode .radiobuttons {
@@ -1627,10 +1643,7 @@ to {
     fill:var(--primary-blue);
     opacity: 1;
 }
-.app-area .app-sidebar-content{
-    flex: 1 0 auto;
-    padding-left: 40px;
-}
+
 .app-area .app-sidebar-content-header {
     display: flex;
     justify-content: space-between;
@@ -1690,19 +1703,23 @@ to {
 
 
 
-/*==========Compoment CSS Start==========*/
+/*==========component CSS Start==========*/
 .components-area{
     padding: 110px 0px 200px;
 }
-.compoment-grid-6{
+.components-area .bottom-shape{
+    bottom: -1px;
+}
+.component-grid-6{
     display: grid;
     /* grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) ); */
     /* grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     grid-gap: 15px;
+    padding-bottom: 50px;
 
 }
-.compoment-content {
+.component-content {
     background: rgba(71, 85, 105, 0.5);
     backdrop-filter: blur(7.5px);
     border-radius: 6px;
@@ -1718,7 +1735,7 @@ to {
 
 }
 
-.compoment-content::after {
+.component-content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1735,14 +1752,9 @@ to {
 
 }
 
-.compoment-content:hover::after{
+.component-content:hover::after{
     display: block;
     
-}
-.compoment-shape{
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
 }
 
 /*==========Creative CSS Start==========*/
@@ -1765,7 +1777,28 @@ to {
     z-index: -1;
 }
 /*==========test CSS Start==========*/
-.frame-area .app-sidebar-nav {
+
+.faq-area{
+    padding-top: 110px;
+}
+.faq-area .accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+.accordion-button{
+    border-radius: 4px 4px 0px 0px;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--primary);
+    box-shadow: none;
+}
+.accordion-button.accordion-bg-1,
+.accordion-button:not(.collapsed).accordion-bg-1{
+    background: #DCFCE7;
+}
+/*==========test CSS Start==========*/
+/*==========test CSS Start==========*/
+/* .frame-area .app-sidebar-nav {
     border-right: 1px dashed #e1e3ea;
     width: 238px;
     max-width: 100%;
@@ -1795,7 +1828,7 @@ to {
     font-weight: 500;
     background: #E5F9FF;
     border-radius: 4px;
-}
+} */
 
 /*==========test CSS Start==========*/
 /*==========test CSS Start==========*/
