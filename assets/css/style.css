@@ -7,10 +7,20 @@ Template Name: DashCode -  HTML Template
 
 /* =========
 --- CSS INDEX ---
-1.Fonts CSS
-2.Common CSS
-3.Loader CSS
-4.Banner CSS
+01. Common CSS
+02. Header CSS
+03. Banner CSS
+04. Counter CSS
+05. Partner CSS
+06. App CSS
+07. Component CSS
+08. Creative CSS
+09. Frame CSS
+10. Faq CSS
+11. Pricing CSS
+12. Review CSS
+13. Contact CSS
+14. Footer CSS
 
 32.Responsive CSS
 ============*/
@@ -361,7 +371,6 @@ ul {
     margin-left: 50px;
 }
 
-r
 /*margin -right*/
 
 .mr-10 {
@@ -915,12 +924,13 @@ r
 .con-pt-50{
     padding-top: 50px;
 }
+.con-pb-50{
+    padding-bottom: 50px;
+}
 .sec-shp-pt-pb{
     padding: 110px 0px 200px;
 }
-.section-title-50{
-    margin-bottom: 50px;
-}
+
 .h2-title,
 .section-title{
     font-weight: 600;
@@ -1105,8 +1115,6 @@ r
     transform: translate(0,-50%) rotate(-180deg);
     transition: 0.3s;
 } 
-
-
 .header-area  ul li ul.sub-menu {
     position: absolute;
     top: 100%;
@@ -1170,10 +1178,7 @@ r
     padding: 12px 18px;
 
 }
-/* .header-area ul li a:hover,
-.header-area ul li a.active{
-    font-weight: 600;
-} */
+/*==========Header CSS End==========*/
 
 /*==========Banner CSS Start==========*/
 .banner-area {
@@ -1277,7 +1282,6 @@ r
 	z-index: 4;
     opacity: 0;
 }
-
 .banner-area .banner-slider .slider-button {
     display: flex;
     align-items: center;
@@ -1296,8 +1300,6 @@ r
 	cursor: pointer;
 	z-index: 3;
 }
-
-
 
 .banner-area .banner-shape {
     position: absolute;
@@ -1453,7 +1455,7 @@ to {
 		transform: translate(0);
 	}
 }
-
+/*==========Banner CSS End==========*/
 /*==========Counter CSS Start==========*/
   .counter-area .bg-1{
     padding: 45px 0px;
@@ -1461,16 +1463,16 @@ to {
     margin-top: -100px;
     z-index: 5;
   }
-
+/*==========Counter CSS End==========*/
 /*==========Partner  CSS Start==========*/
   .partner-area{
     padding: 70px 0px;
     position: relative;
     background-color:#012A35;
   }
+/*==========Partner  CSS End==========*/
 
-
-/*==========App-area CSS Start==========*/
+/*==========App CSS Start==========*/
 .app-sidebar-nav {
     border-right: 1px dashed #e1e3ea;
     width: 238px;
@@ -1506,71 +1508,6 @@ to {
     flex: 1;
     padding-left: 40px;
 }
-
-/* 
-.app-area .filter-mode .radiobuttons {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid var(--gray);
-    border-radius: 4px;
-    padding: 15px;
-}
-.app-area .filter-mode .radio input[type=radio] {
-  opacity: 0;
-}
-.app-area .filter-mode .radio-inline {
-    position: relative;
-    display: inline-block;
-}
-
-.app-area .filter-mode .radio label {
-  cursor: pointer;
-  padding-left: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  color: var(--gary);
-}
-.app-area .filter-mode .radio label:before {
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 5px;
-  left: 0;
-  content: "";
-  display: inline-block;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  border: 1px solid var(--gray);
-  background: #fff;
-}
-
-.app-area .filter-mode .radio input[type=radio] + label::after {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 4px;
-  display: inline-block;
-  font-size: 11px;
-  width: 10px;
-  height: 10px;
-  background-color:var(--gray);
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-}
-
-
-.app-area .filter-mode .radio input[type=radio]:checked + label:before {
-    border-color: var(--primary-blue);
-  }
-
-
-
-.app-area .filter-mode .radio input[type=radio]:checked + label:after {
-  background-color: var(--primary-blue);
-} */
 
 .app-area .app-version-icon  [type="radio"]:checked,
 [type="radio"]:not(:checked) {
@@ -1698,28 +1635,23 @@ to {
     visibility: visible;
     opacity: 1;
 }
+/*==========App CSS End==========*/
 
-
-
-
-
-/*==========component CSS Start==========*/
+/*==========Component CSS Start==========*/
 .components-area{
     padding: 110px 0px 200px;
 }
 .components-area .bottom-shape{
     bottom: -1px;
 }
-.component-grid-6{
+.components-area .component-grid-6{
     display: grid;
     /* grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) ); */
-    /* grid-template-columns: repeat(auto-fill, minmax(235px, 1fr)); */
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     grid-gap: 15px;
     padding-bottom: 50px;
-
 }
-.component-content {
+.components-area .component-content {
     background: rgba(71, 85, 105, 0.5);
     backdrop-filter: blur(7.5px);
     border-radius: 6px;
@@ -1734,8 +1666,7 @@ to {
     transition: all .3s ease;
 
 }
-
-.component-content::after {
+.components-area .component-content::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1747,35 +1678,31 @@ to {
     border-style: solid;
     border-image-source:  linear-gradient(90deg, #082F90 0%, #3B82F6 37%, #3B82F6 65.28%, #082F90 100%);
     border-image-slice: 1;
-    display: none;
-    
-
+    display: none; 
 }
-
-.component-content:hover::after{
+.components-area .component-content:hover::after{
     display: block;
     
 }
-
+/*==========Component CSS End==========*/
 /*==========Creative CSS Start==========*/
-.creative-grid-9{
+.creative-area .creative-grid-9{
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(163px, 1fr)); */
     grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
     grid-gap: 10px;
-
 }
-.creative-area-decription a{
+.creative-area .creative-area-decription a{
     padding: 15px;
     background: var(--off-white);
     display: block;
 }
-.creative-shape {
+.creative-area .creative-shape {
     position: absolute;
     display: inline-block;
     top: -130px;
     z-index: -1;
 }
+/*==========Creative CSS End==========*/
 /*==========test CSS Start==========*/
 
 .faq-area{
