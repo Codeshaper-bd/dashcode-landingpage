@@ -132,6 +132,25 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
+		// banner carousel JS Start
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+		dots: true,
+		nav: false,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
 
   
 });

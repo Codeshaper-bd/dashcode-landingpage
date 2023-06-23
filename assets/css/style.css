@@ -1706,8 +1706,7 @@ to {
     z-index: -1;
 }
 /*==========Creative CSS End==========*/
-/*==========test CSS Start==========*/
-
+/*==========Faq CSS Start==========*/
 .faq-area{
     padding-top: 110px;
     margin-top: 150px;
@@ -1746,8 +1745,9 @@ to {
 .faq-area .bottom-shape {
     bottom: -100px;
 }
-/*==========test CSS Start==========*/
-.save-m-wrapper {
+/*==========Faq CSS Start==========*/
+/*==========Pricing CSS Start==========*/
+.pricing-area .save-m-wrapper {
     background: var(--primary);
 }
 .com-card{
@@ -1761,18 +1761,17 @@ to {
   position: relative;
   margin-bottom: 15px;
 }
-.save-m-des {
+.pricing-area .save-m-des {
     padding: 30px;
     color: var(--white);
 }
 
-.price-body li{
+.pricing-area .price-body li{
     position: relative;
     padding-left:20px;
     padding-bottom: 10px;
 }
-.price-body li::before {
-
+.pricing-area .price-body li::before {
     content: "";
     height: 25px;
     width: 25px;
@@ -1781,14 +1780,14 @@ to {
     left: 0;
     top: 7px;
 }
-.price-body li.cross::before {
+.pricing-area .price-body li.cross::before {
     content: "";
     background:url(../img/croos.png) no-repeat;
 }
-.price-btn {
+.pricing-area .price-btn {
     margin-top: 30px;
 }
-button.buy-btn {
+.pricing-area .buy-btn {
     background: var(--primary);
     width: 70%;
     margin: 0 auto;
@@ -1797,6 +1796,7 @@ button.buy-btn {
     padding: 14px;
     border-radius: 6px;
 }
+.com-card .review-name .font-12,
 .com-card .content-title{
     color:var(--primary);
 }
@@ -1804,17 +1804,71 @@ button.buy-btn {
     background:var(--primary);
     color: var(--white);
 }
+.com-card:hover .review-name .font-12,
 .com-card:hover .font-20,
 .com-card:hover .content-title{
     color: var(--white);
 }
-.com-card:hover .buy-btn{
+.pricing-area .com-card:hover .buy-btn{
      background: var(--white);
      color:var(--primary);
 }
+/*==========Pricing CSS End==========*/
+/*==========Review CSS Start==========*/
 
-/*==========test CSS Start==========*/
-/* .frame-area .app-sidebar-nav {
+.review-area .review-header-img {
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    max-width: 135px;
+    transform: translateX(-50%);
+    border: 6px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--off-white);
+}
+.review-area .owl-carousel.owl-theme .owl-dots .owl-dot  span {
+    background:var(--gray);
+    width: 30px;
+    height: 6px;
+    border-radius: 25px;
+}
+.review-area .owl-carousel.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--primary);
+}
+/*==========Contact CSS Start==========*/
+.contact-area .contact-btn {
+    background: var(--white);
+    display: inline-block;
+    padding: 14px 35px;
+    border-radius: 6px;
+}
+.contact-area .contact-wrapper {
+    border-radius: 12px;
+    background: #003543;
+    padding: 60px 110px;
+}
+.contact-area .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.contact-area .contact-content p{
+    color: var(--white);
+    padding: 10px 0px;
+}
+.contact-area .contact-img-a [class*="contact-"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contact-area .contact-img-a .contact-r-img {
+    right: 0;
+    left: auto;
+}
+/* .frame-area .app-sidebar-nav {}
     border-right: 1px dashed #e1e3ea;
     width: 238px;
     max-width: 100%;
