@@ -133,7 +133,7 @@ $('.button-group').each( function( i, buttonGroup ) {
   });
 });
 		// banner carousel JS Start
-$('.owl-carousel').owlCarousel({
+$('.review-slider').owlCarousel({
     loop:true,
     margin:20,
 		dots: true,
@@ -150,7 +150,7 @@ $('.owl-carousel').owlCarousel({
             items:4
         }
     }
-})
+});
 
   
 });
