@@ -36,6 +36,100 @@
 
     <!-- Main Style CSS  -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     <style>
+         .features {
+             padding: 30px 0 40px;
+             background: 0 0;
+         }
+
+         a.button-tab.tab-0:hover,
+         a.button-tab.tab-0.active {
+             background-color: #8ac44b;
+             background-image: url(assets/frontend/img/icon-create-drip-campaigns-white.svg);
+             border-bottom: 1px solid #8ac44b;
+         }
+
+         .tab-0 {
+             background-image: url(assets/frontend/img/icon-create-drip-campaigns.svg);
+             background-size: 35px;
+         }
+
+         a.button-tab.tab-1:hover,
+         a.button-tab.tab-1.active {
+             background-color: #fd9d68;
+             background-image: url(assets/frontend/img/icon-manage-teams-white.svg);
+             border-bottom: 1px solid #fd9d68;
+         }
+
+         .tab-1 {
+             background-image: url(assets/frontend/img/icon-manage-teams.svg);
+             background-size: 40px;
+         }
+
+         a.button-tab.tab-2:hover,
+         a.button-tab.tab-2.active {
+             background-color: #9f6cc9;
+             background-image: url(assets/frontend/img/icon-analyzes-white.svg);
+             border-bottom: 1px solid #9f6cc9;
+         }
+
+         .tab-2 {
+             background-image: url(assets/frontend/img/icon-analyze.svg);
+             background-size: 40px;
+         }
+
+         a.button-tab.tab-2:hover,
+         a.button-tab.tab-2.active {
+             background-color: #9f6cc9;
+             background-image: url(assets/frontend/img/icon-analyzes-white.svg);
+             border-bottom: 1px solid #9f6cc9;
+         }
+
+         .tab-3 {
+             background-image: url(assets/frontend/img/icon-chat-in-your-inbox.svg);
+             background-size: 40px;
+         }
+
+         a.button-tab.tab-3:hover,
+         a.button-tab.tab-3.active {
+             background-color: #9f6cc9;
+             background-image: url(assets/frontend/img/icon-chat-in-your-inbox-white.svg);
+             border-bottom: 1px solid #9f6cc9;
+         }
+
+         .tab-4 {
+             background-image: url(assets/frontend/img/icon-export-csv.svg);
+             background-size: 40px;
+         }
+
+         a.button-tab.tab-4:hover,
+         a.button-tab.tab-4.active {
+             background-color: #9f6cc9;
+             background-image: url(assets/frontend/img/icon-export-csv-white.svg);
+             border-bottom: 1px solid #9f6cc9;
+         }
+
+         a.button-tab {
+             border-radius: 10px 10px 0 0;
+             padding: 70px 15px 15px;
+             display: inline-block;
+             text-align: center;
+             font-weight: 600;
+             background-color: transparent;
+             color: #393857;
+             width: calc(100%/5);
+             border-bottom: 1px solid #c3c3cc;
+             background-position: center 20px;
+             background-repeat: no-repeat;
+             font-size: 14px;
+             text-decoration: none;
+         }
+
+         a.button-tab:hover,
+         a.button-tab.active {
+             color: #fff;
+         }
+     </style>
 </head>
 <body>
 
@@ -1998,12 +2092,50 @@
 <!-- hearer-area end -->
 <!-- hearer-area start -->
 <!-- hearer-area end -->
+<div class="container pt-140 mt-150 pb-105">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1"
+            aria-selected="true">Tab 1</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2"
+            aria-selected="false">Tab 2</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3"
+            aria-selected="false">Tab 3</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+        <div class="owl-carousel">
+            Content for Tab 1
+        </div>
+    </div>
+    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+        <div class="owl-carousel">
+            Content for Tab 2
+        </div>
+    </div>
+    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+        <div class="owl-carousel">
+            Content for Tab 3
+        </div>
+    </div>
+</div>
+
+
+</div>
+
 
 
 <!-- Jquery JS Link -->
 <script src="assets/js/jquery.min.js"></script>
 <!-- Bootstrap JS Link -->
 <script src="assets/js/popper.min.js"></script>
+
 <script src="assets/js/bootstrap.min.js"></script>
 
 <!-- Slick Slider JS Link -->
@@ -2016,6 +2148,41 @@
 <!-- Custom JS Link -->
 <script src="assets/js/custom.js"></script>
 
+<script>
+
+      $(document).ready(function () {
+          $('.owl-carousel').owlCarousel({
+              // Owl Carousel options and settings
+              // For example:
+              loop: true,
+              margin: 10,
+              responsiveClass: true,
+              responsive: {
+                  0: {
+                      items: 1,
+                      nav: true
+                  },
+                  600: {
+                      items: 3,
+                      nav: false
+                  },
+                  1000: {
+                      items: 5,
+                      nav: true,
+                      loop: false
+                  }
+              }
+          });
+
+          // Activate the Owl Carousel on tab change
+          $('#myTab a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+              var target = $(e.target).attr("href");
+              $(target + ' .owl-carousel').trigger('refresh.owl.carousel');
+          });
+      });
+  </script>
+
+    
 
 </body>
 </html>

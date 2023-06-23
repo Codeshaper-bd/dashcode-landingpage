@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DashCode</title>
+    <meta name="keywords" content="DashCode" />
+    <meta name="description" content="DashCode" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/images/favicon2.png" type="image/gif" sizes="16x16">
+
+
+
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+
+    <!-- Carousel Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Wow Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" type="xt/css" href="assets/css/magnific-popup.min.css">
+
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+</head>
+<body>
+<div class="container">
+    <!-- Navigation Tabs -->
+    <ul class="nav nav-tabs" id="myTabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#tab1">Tab 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab2">Tab 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab3">Tab 3</a>
+        </li>
+    </ul>
+
+    <!-- Carousel Slider -->
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div id="tab1" class="tab-pane fade show active">
+                <!-- Content for Tab 1 -->
+                <h2>Tab 1 Content</h2>
+                <p>This is the content for Tab 1.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div id="tab2" class="tab-pane fade">
+                <!-- Content for Tab 2 -->
+                <h2>Tab 2 Content</h2>
+                <p>This is the content for Tab 2.</p>
+            </div>
+        </div>
+        <div class="item">
+            <div id="tab3" class="tab-pane fade">
+                <!-- Content for Tab 3 -->
+                <h2>Tab 3 Content</h2>
+                <p>This is the content for Tab 3.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap JS Link -->
+<script src="assets/js/popper.min.js"></script>
+
+<script src="assets/js/bootstrap.min.js"></script>
+
+<!-- Slick Slider JS Link -->
+<script src="assets/js/slick.min.js"></script>
+<!-- carousel slider JS -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- Wow Animation JS -->
+<script src="assets/js/wow.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: false,
+                nav: true,
+                dots: false,
+                onTranslate: updateNavTabs
+            });
+
+            // Update active nav tab based on the current slide
+            function updateNavTabs(event) {
+                var currentIndex = event.item.index;
+                $('#myTabs li.nav-item a').removeClass('active');
+                $('#myTabs li.nav-item:eq(' + currentIndex + ') a').addClass('active');
+            }
+
+            // Handle click event on nav tabs
+            $('#myTabs a.nav-link').click(function (e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                $('.owl-carousel').trigger('to.owl.carousel', $(target).parent().index());
+            });
+        });
+    </script>
+
+
+</body>
+</html>

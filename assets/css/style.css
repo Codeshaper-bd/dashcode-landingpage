@@ -55,9 +55,9 @@ Template Name: DashCode -  HTML Template
 
 body{
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 1.5;
 
 }
 
@@ -1053,6 +1053,7 @@ ul {
 .bottom-shape{
     position: absolute;
     width: 100%;
+    bottom: 0;
 }
 
 /*==========Header CSS Start==========*/
@@ -1474,7 +1475,6 @@ to {
 
 /*==========App CSS Start==========*/
 .app-sidebar-nav {
-    border-right: 1px dashed #e1e3ea;
     width: 238px;
     max-width: 100%;
     padding-right:40px ;
@@ -1484,8 +1484,9 @@ to {
     font-size: 20px;
     padding: 16px;
     color: #475569;
-    text-align: left;
-
+    display: flex;
+    align-items: center;
+    gap:5px;
 }
 
 .app-sidebar-nav .nav-pills .nav-link.active, 
@@ -1505,12 +1506,14 @@ to {
     border-radius: 4px;
 }
 .app-sidebar-content{
+    min-height: 450px;
     flex: 1;
     padding-left: 40px;
+    border-left: 1px dashed #e1e3ea;
 }
 
 .app-area .app-version-icon  [type="radio"]:checked,
-[type="radio"]:not(:checked) {
+.app-area [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
@@ -1707,23 +1710,109 @@ to {
 
 .faq-area{
     padding-top: 110px;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.faq-area .top-faq {
+    position: absolute;
+    z-index: -1;
+    top: -20%;
+    width: 100%;
 }
 .faq-area .accordion-button:focus {
     border-color: transparent;
     box-shadow: none;
 }
-.accordion-button{
+.faq-area .accordion-button{
     border-radius: 4px 4px 0px 0px;
 }
-.accordion-button:not(.collapsed) {
+.faq-area .accordion-button:not(.collapsed) {
     color: var(--primary);
     box-shadow: none;
 }
-.accordion-button.accordion-bg-1,
-.accordion-button:not(.collapsed).accordion-bg-1{
+.faq-area .accordion-button.accordion-bg-1,
+.faq-area .accordion-button:not(.collapsed).accordion-bg-1{
     background: #DCFCE7;
 }
+.faq-area .accordion-button.accordion-bg-2,
+.faq-area .accordion-button:not(.collapsed).accordion-bg-2{
+    background: #FFE4E6;
+}
+.faq-area .accordion-button.accordion-bg-3,
+.faq-area .accordion-button:not(.collapsed).accordion-bg-3{
+    background: #F3E8FF;
+}
+.faq-area .bottom-shape {
+    bottom: -100px;
+}
 /*==========test CSS Start==========*/
+.save-m-wrapper {
+    background: var(--primary);
+}
+.com-card{
+  background: var(--off-white);
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  padding: 24px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.save-m-des {
+    padding: 30px;
+    color: var(--white);
+}
+
+.price-body li{
+    position: relative;
+    padding-left:20px;
+    padding-bottom: 10px;
+}
+.price-body li::before {
+
+    content: "";
+    height: 25px;
+    width: 25px;
+    background:url(../img/right.png) no-repeat ;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.price-body li.cross::before {
+    content: "";
+    background:url(../img/croos.png) no-repeat;
+}
+.price-btn {
+    margin-top: 30px;
+}
+button.buy-btn {
+    background: var(--primary);
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    color: var(--white);
+    padding: 14px;
+    border-radius: 6px;
+}
+.com-card .content-title{
+    color:var(--primary);
+}
+.com-card:hover{
+    background:var(--primary);
+    color: var(--white);
+}
+.com-card:hover .font-20,
+.com-card:hover .content-title{
+    color: var(--white);
+}
+.com-card:hover .buy-btn{
+     background: var(--white);
+     color:var(--primary);
+}
+
 /*==========test CSS Start==========*/
 /* .frame-area .app-sidebar-nav {
     border-right: 1px dashed #e1e3ea;
