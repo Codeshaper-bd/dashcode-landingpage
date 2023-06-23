@@ -152,5 +152,13 @@ $('.review-slider').owlCarousel({
     }
 });
 
+
+var $grid = $('.creativegrid').isotope({
+	itemSelector: '.element-item',
+	layoutMode: 'fitRows',
+	percentPosition:true,
+	filter: '.layout-1'
+  });
+  // filter functions
   
 });

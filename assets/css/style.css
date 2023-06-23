@@ -1682,6 +1682,7 @@ to {
     border-image-source:  linear-gradient(90deg, #082F90 0%, #3B82F6 37%, #3B82F6 65.28%, #082F90 100%);
     border-image-slice: 1;
     display: none; 
+    background: #003543;
 }
 .components-area .component-content:hover::after{
     display: block;
