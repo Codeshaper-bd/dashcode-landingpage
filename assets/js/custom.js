@@ -160,5 +160,23 @@ var $grid = $('.creativegrid').isotope({
 	filter: '.layout-1'
   });
   // filter functions
+  	// Toggle Menu Mobile JS Two
+	$(".toggle-button-two").on( 'click', function(){
+		$(".main-navigation-two").toggleClass('toggle-menu-two');
+		$(".main-menu  .black-shadow-two").fadeToggle();
+	});
+	$(".main-navigation-two ul li a").on( 'click', function(){
+		$(".main-navigation-two").removeClass('toggle-menu-two');
+		$(".main-menu  .black-shadow-two").fadeOut();
+	});
+	$(".main-navigation-two ul li.sub-items-two>a").on( 'click', function(){
+		$(".main-navigation-two").addClass('toggle-menu-two');
+		$(".main-menu  .black-shadow-two").stop();
+	});
+	$(".main-menu  .black-shadow-two").on( 'click', function(){
+		$(this).fadeOut();
+		$(".main-navigation-two").removeClass('toggle-menu-two');
+	});
+	// Toggle Menu Mobile JS End
   
 });
