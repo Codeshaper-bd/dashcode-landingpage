@@ -912,6 +912,9 @@ ul {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     position: relative;
 }
+.common-btn:hover{
+    color: var(--white);
+}
 .btn-transparent{
     background-color: transparent;
     border: 1px solid #FFFFFF;
@@ -1528,6 +1531,9 @@ to {
     max-width: 100%;
     padding-right:40px ;
 }
+.app-sidebar-nav .nav{
+    flex-direction: column;
+}
 .app-sidebar-nav .nav .nav-link {
     font-weight: 500;
     font-size: 20px;
@@ -2141,6 +2147,9 @@ to {
     }
     .contact-area  .contact-img-a{
         display: none;
+    }
+    .app-sidebar-nav .nav{
+        flex-direction: row;
     }
  
    
