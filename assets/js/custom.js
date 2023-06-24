@@ -152,30 +152,60 @@ $('.review-slider').owlCarousel({
     }
 });
 
-
-var $grid = $('.creativegrid').isotope({
-	itemSelector: '.element-item',
-	layoutMode: 'fitRows',
-	percentPosition:true,
-	filter: '.layout-1'
+$( document ).ready(function() {
+	var $grid = $('.creativegrid').isotope({
+		itemSelector: '.element-item',
+		layoutMode: 'fitRows',
+		percentPosition:true,
+		filter: '.layout-1'
+	  });
+	  // filter functions
+var filterFns = {
+	// show if number is greater than 50
+	numberGreaterThan50: function() {
+	  var number = $(this).find('.number').text();
+	  return parseInt( number, 10 ) > 50;
+	},
+	// show if name ends with -ium
+	ium: function() {
+	  var name = $(this).find('.name').text();
+	  return name.match( /ium$/ );
+	}
+  };
+  // bind filter button click
+  $('.filters-button-group').on( 'click', 'button', function() {
+	var filterValue = $( this ).attr('data-filter');
+	// use filterFn if matches value
+	filterValue = filterFns[ filterValue ] || filterValue;
+	$grid.isotope({ filter: filterValue });
   });
+  // change is-checked class on buttons
+  $('.button-group').each( function( i, buttonGroup ) {
+	var $buttonGroup = $( buttonGroup );
+	$buttonGroup.on( 'click', 'button', function() {
+	  $buttonGroup.find('.is-checked').removeClass('is-checked');
+	  $( this ).addClass('is-checked');
+	});
+  });
+});
+
   // filter functions
   	// Toggle Menu Mobile JS Two
-	$(".toggle-button-two").on( 'click', function(){
-		$(".main-navigation-two").toggleClass('toggle-menu-two');
-		$(".main-menu  .black-shadow-two").fadeToggle();
+	$(".toggle-button").on( 'click', function(){
+		$(".main-navigation").toggleClass('toggle-menu');
+		$(".main-menu  .black-shadow").fadeToggle();
 	});
-	$(".main-navigation-two ul li a").on( 'click', function(){
-		$(".main-navigation-two").removeClass('toggle-menu-two');
-		$(".main-menu  .black-shadow-two").fadeOut();
+	$(".main-navigation ul li a").on( 'click', function(){
+		$(".main-navigation").removeClass('toggle-menu');
+		$(".main-menu  .black-shadow").fadeOut();
 	});
-	$(".main-navigation-two ul li.sub-items-two>a").on( 'click', function(){
-		$(".main-navigation-two").addClass('toggle-menu-two');
-		$(".main-menu  .black-shadow-two").stop();
+	$(".main-navigation ul li.sub-items>a").on( 'click', function(){
+		$(".main-navigation").addClass('toggle-menu');
+		$(".main-menu  .black-shadow").stop();
 	});
-	$(".main-menu  .black-shadow-two").on( 'click', function(){
+	$(".main-menu  .black-shadow").on( 'click', function(){
 		$(this).fadeOut();
-		$(".main-navigation-two").removeClass('toggle-menu-two');
+		$(".main-navigation").removeClass('toggle-menu');
 	});
 	// Toggle Menu Mobile JS End
   

@@ -1179,6 +1179,59 @@ ul {
     padding: 12px 18px;
 
 }
+.toggle-button {
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 0 15px;
+    background: #012A35;
+    border-radius: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    display: none;
+    z-index: 110;
+
+}
+.toggle-button span {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    display: block;
+    margin: 0 auto 6px auto;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    float: right;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+}
+.toggle-button .toggle-width-two {
+    width: 25px;
+}
+.toggle-button span:last-child {
+    margin-bottom: 0;
+}
+.toggle-menu .toggle-button {
+    background-color:#012A35;
+}
+.toggle-menu .toggle-button span {
+    background-color: #ffffff;
+}
+.toggle-menu .toggle-button span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+}
+.toggle-menu .toggle-button span:nth-child(2) {
+    opacity: 0;
+}
+.toggle-menu .toggle-button span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -9px;
+}
 /*==========Header CSS End==========*/
 
 /*==========Banner CSS Start==========*/
@@ -1317,7 +1370,6 @@ ul {
 }
 
 .banner-area  .banner-shape-2 {
-    position: absolute;
     bottom: 190px;
     right: 30px;
     animation: bounce 2s infinite alternate;
@@ -1325,7 +1377,6 @@ ul {
 }
 
 .banner-area  .banner-shape-3 {
-    position: absolute;
     left: 41%;
     top: 15%;
     animation: bounce 2s infinite alternate;
@@ -1333,7 +1384,6 @@ ul {
   
 }
 .banner-area  .banner-shape-4 {
-    position: absolute;
     left: 1%;
     top: 45%;
     animation: move2 10s infinite;
@@ -1467,7 +1517,6 @@ to {
 /*==========Counter CSS End==========*/
 /*==========Partner  CSS Start==========*/
   .partner-area{
-    padding: 70px 0px;
     position: relative;
     background-color:#012A35;
   }
@@ -1695,6 +1744,9 @@ to {
     grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
     grid-gap: 10px;
 }
+.creative-area .creative-grid-9 button{
+    padding-bottom: 20px;
+}
 .creative-area .creative-area-decription a{
     padding: 15px;
     background: var(--off-white);
@@ -1896,133 +1948,22 @@ to {
     border-radius: 50%;
     display: inline-block;
     background: var(--white);
+    color: #475569;
     text-align: center;
     line-height: 36px;
     margin-right: 15px;
+    transition: all .3s ease;
+}
+
+.footer-social a:hover {
+    background: var(--primary-blue);
+    color: var(--white);
 }
 /*==========Footer CSS End==========*/
 
-
 /*==========Responsive CSS Start==========*/
-.toggle-button-two {
-    position: fixed;
-    top: 18px;
-    right: 50px;
-    width: 60px;
-    height: 60px;
-    padding: 0 15px;
-    background: #012A35;
-    border-radius: 100%;
-    text-align: center;
-    border: none;
-    outline: none;
-    display: none;
-    z-index: 110;
-}
-  
-
-.toggle-button-two span {
-    width: 30px;
-    height: 3px;
-    background: #ffffff;
-    display: block;
-    margin: 0 auto 6px auto;
-    position: relative;
-    top: 0;
-    opacity: 1;
-    float: right;
-    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-}
 
 
-
-.toggle-button-two .toggle-width-two {
-    width: 25px;
-}
-
-
-
-.toggle-button-two span:last-child {
-    margin-bottom: 0;
-}
-
-
-
-.toggle-menu-two .toggle-button-two {
-    background-color:#012A35;
-}
-
-.toggle-menu-two .toggle-button-two span {
-    background-color: #ffffff;
-}
-
-
-
-.toggle-menu-two .toggle-button-two span:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 9px;
-}
-
-
-.toggle-menu-two .toggle-button-two span:nth-child(2) {
-    opacity: 0;
-}
-
-
-
-.toggle-menu-two .toggle-button-two span:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -9px;
-}
-
-
-
-@media screen and (max-width: 991px) {
-    .toggle-button-two {
-        display: block;
-    }
-    .main-navigation-two ul {
-        position: fixed;
-        top: 0;
-        right: -400px;
-        width: 320px;
-        height: 100vh;
-        max-height: 100vh;
-        overflow: auto;
-        background: var(--primary);
-        text-align: center;
-        padding: 100px 0 30px;
-        box-shadow: -30px 0 30px rgba(0,0,0,0.1);
-        transition: 0.5s;
-        opacity: 0;
-        z-index: 100;
-    }
-    .main-navigation-two.toggle-menu-two ul {
-        right: 0;
-        opacity: 1;
-        z-index: 100;
-    }
-    .header-area ul li {
-        display: block;
-        text-align: left;
-        border-bottom: solid 1px rgb(225, 225, 225,0.2);
-        margin-top: 0;
-        margin-right: 0px;
-        opacity: 1;
-        transition: 0.5s;
-        transition-delay: 0.4s;
-        padding: 10px 40px 20px 40px;
-    }
-    .header-area ul li:last-child {
-        border-bottom: none;
-    }
-    .lg-none{
-        display: none;
-    }
-   
-}
 @media screen and (max-width: 1299px) {
    .mb-sm-30{
     margin-bottom: 30px;
@@ -2050,20 +1991,171 @@ to {
         padding-top: 150px;
         padding-bottom: 125px;
     }
+    .com-title .section-sub-title br {
+       display: none;
+    }
    
 }
+
+@media (min-width: 992px){
+   
+    .lg-none{
+        display: none !important;
+    }
+    
+}
+
+
 @media screen and (max-width: 1199px) {
+    .common-btn {
+        font-size: 14px;
+        padding: 12px 25px;
+    }
+    .h2-title, .section-title {
+        font-size: 25px;
+    }
+    .banner-area .counter-box-one {
+        padding-top: 45px;
+    }
+    .banner-area .banner-content .banner-btn {
+        padding-top: 25px;
+        gap: 20px;
+    }
+    .banner-area .banner-shape-3 {
+        top: 9%;
+    }
+    .banner-shape-1 {
+        left: 28px;
+    }
     .top-faq{
         display: none;
     }
     .faq-area .bottom-shape {
         display: none;
     }
+    .app-sidebar-nav .nav .nav-link {
+        font-size: 18px;
+        padding: 13px;
+    }
+    .app-sidebar-nav {
+        width: 200px;
+        padding-right: 10px;
+    }
+    .app-sidebar-content {
+        padding-left: 20px;
+    }
+    .app-area .button-group .lida-lert, .app-area .button-group .app-grid-icon [class*=button] {
+        padding: 9px;
+    }
+    .header-area ul li {
+
+        margin-right: 20px;
+    }
+
 }
-@media (min-width: 992px){
+
+@media screen and (max-width: 991px) {
+    
     .sm-none{
         display: none;
     }
+   
+    .main-navigation ul {
+        position: fixed;
+        top: 0;
+        right: -400px;
+        width: 320px;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: auto;
+        background: var(--primary);
+        text-align: center;
+        padding: 100px 0 30px;
+        box-shadow: -30px 0 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        opacity: 0;
+        z-index: 100;
+    }
+    .main-navigation.toggle-menu ul {
+        right: 0;
+        opacity: 1;
+        z-index: 100;
+    }
+    .main-navigation ul li {
+        display: block;
+        text-align: left;
+        border-bottom: solid 1px rgb(225, 225, 225,0.2);
+        margin-top: 0;
+        margin-right: 0px;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.4s;
+        padding: 10px 40px 20px 40px;
+    }
+    .main-navigation ul li:last-child {
+        border-bottom: none;
+    }
+    .toggle-button {
+        display: block;
+    }
+   
+    .banner-area .banner-shape-8 {
+        left: 70%;
+    }
+    .banner-area {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    .sec-padding-70{
+        padding: 45px 0px;
+    }
+    .lg-none{
+        display: none;
+    }
+    .con-pt-50 {
+        padding-top: 35px;
+    }
+    .contact-area .contact-wrapper {
+        padding: 35px 30px;
+    }
+    .contact-area  .contact-img-a{
+        display: none;
+    }
+    .faq-area {
+        padding-top: 80px;
+        margin-top: 50px;
+        margin-bottom: 0px
+    }
+   
+}
+
+@media screen and (max-width: 767px) {
+   
+    .banner-shape-w{
+        display: none;
+    }
+    .app-sidebar-nav .nav .nav-link {
+        font-size: 17px;
+        padding: 10px;
+    }
+    .app-sidebar-nav {
+        width: 100%;
+        padding-right: 10px;
+    }
+    .app-area .app-sidebar-content-header {
+        margin-top: 20px;
+    }
+    .app-sidebar-content {
+        padding-left: 0px;
+        border: none;
+    }
+    
+    .contact-area .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 575px) {
+   
 }
 /*   
 @media (min-width: 992px){
