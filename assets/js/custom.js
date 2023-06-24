@@ -146,11 +146,39 @@ $('.review-slider').owlCarousel({
         600:{
             items:2
         },
-        1000:{
+		1000:{
+            items:3
+        },
+        1200:{
             items:4
         }
     }
 });
+$('.partner-carousel').owlCarousel({
+    loop:true,
+	autoplay:true,
+	autoplayTimeout:3000,
+    margin:20,
+	dots:false,
+	nav: false,
+
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:2
+        },
+		1000:{
+            items:4
+        },
+        1200:{
+            items:6
+        }
+    }
+});
+
+
 
 $( document ).ready(function() {
 	var $grid = $('.creativegrid').isotope({
@@ -208,5 +236,43 @@ var filterFns = {
 		$(".main-navigation").removeClass('toggle-menu');
 	});
 	// Toggle Menu Mobile JS End
-  
+	// $(window).on("load resize", function() {
+	// 	if($(window).width < 991){
+	// 	 $('.owl-carousel').hide();
+	// 	}
+	// 	else{
+	// 	 $('.owl-group').show();
+	// 	}
+	// });
+	
+	$('.creative-carousel').owlCarousel({
+		loop:true,
+		autoplay:true,
+		autoplayTimeout:3000,
+		margin:20,
+		dots:false,
+		nav: false,
+	
+		responsive:{
+			0:{
+				items:2
+			},
+			600:{
+				items:4
+			},
+			1000:{
+				items:6
+			},
+			1200:{
+				items:9
+			}
+		}
+	});
+
+		// $(window).on('resize', function() {
+		// 	if($(window).width() < 991) {
+		// 		$('.creative-carousel').addClass('owl-carousel');
+		// 	}
+			
+		// });
 });

@@ -58,7 +58,6 @@ body{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-
 }
 
 a,
@@ -1132,6 +1131,9 @@ ul {
     transition: 0.3s;
     z-index: 150;
 }
+.header-area  ul li ul.sub-menu li{
+    font-size: 14px;
+}
 .header-area  ul li ul.sub-menu li {
     display: block;
     text-align: left;
@@ -1151,15 +1153,15 @@ ul {
 .header-area ul li ul.sub-menu {
     position: absolute;
     top: 100%;
-    left: -15px;
-    width: 200px;
+    left: 25px;
+    width: 150px;
     height: auto;
     background: var(--primary);
     border-radius: 4px;
     box-shadow: 1px 1px 60px rgba(0,0,0,0.3);
     display: none;
     transition: 0.3s;
-    z-index: 150;
+    z-index: 15;
 }
 
 
@@ -1184,7 +1186,7 @@ ul {
 }
 .toggle-button {
     position: fixed;
-    right: 50px;
+    right: 28px;
     top: 20px;
     width: 60px;
     height: 60px;
@@ -1523,6 +1525,20 @@ to {
     position: relative;
     background-color:#012A35;
   }
+  .partner-carousel.owl-carousel .owl-item img{
+    max-width: 100%; 
+    width: auto;
+  }
+  .partner-img img {
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
+ 
+}
+.partner-img:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
 /*==========Partner  CSS End==========*/
 
 /*==========App CSS Start==========*/
@@ -1838,6 +1854,7 @@ to {
     color: var(--white);
 }
 
+
 .pricing-area .price-body li{
     position: relative;
     padding-left:20px;
@@ -1981,48 +1998,44 @@ to {
 /*==========Footer CSS End==========*/
 
 /*==========Responsive CSS Start==========*/
-
-
-@media screen and (max-width: 1299px) {
-   .mb-sm-30{
-    margin-bottom: 30px;
-   }
-   .mb-sm-20{
-    margin-bottom: 20px;
-   }
-    .h2-title, .section-title {
-        font-size: 30px;
-    }
-    .content-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 22px;
-    }
-    /* banner  */
-    .banner-area .banner-slider-wrapper {
-        height: 500px;
-    }
-    .banner-area .banner-content .section-title {
-        font-size: 35px;
-        line-height: 135%;
-    }
-    .banner-area {
-        padding-top: 150px;
-        padding-bottom: 125px;
-    }
-    .com-title .section-sub-title br {
-       display: none;
-    }
-   
-}
-
 @media (min-width: 992px){
-   
     .lg-none{
         display: none !important;
     }
-    
 }
+@media screen and (max-width: 1299px) {
+    .mb-sm-30{
+     margin-bottom: 30px;
+    }
+    .mb-sm-20{
+     margin-bottom: 20px;
+    }
+     .h2-title,
+      .section-title {
+         font-size: 30px;
+     }
+     .content-title {
+         font-size: 20px;
+         line-height: 22px;
+     }
+     /* banner  */
+     .banner-area .banner-slider-wrapper {
+         height: 500px;
+     }
+     .banner-area .banner-content .section-title {
+         font-size: 35px;
+         line-height: 135%;
+     }
+     .banner-area {
+         padding-top: 150px;
+         padding-bottom: 125px;
+     }
+     .com-title .section-sub-title br {
+        display: none;
+     }
+    
+ }
+
 
 
 @media screen and (max-width: 1199px) {
@@ -2074,20 +2087,31 @@ to {
         padding: 11px 14px;
     }
     .faq-area {
-        padding-top: 80px;
-        margin-top: 50px;
+        padding-top: 100px;
+        margin-top: 20px;
         margin-bottom: 0px
+    }
+    .app-area .button-group .app-grid-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    .app-area .app-version-icon [type="radio"]:checked + label,
+     .app-area .app-version-icon [type="radio"]:not(:checked) + label {
+        padding-left: 22px;
+        font-size: 15px;
+    }
+    .footer-area {
+        padding: 150px 0px 70px;
     }
 
 }
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
     
     .sm-none{
         display: none;
     }
-   
-    .main-navigation ul {
+    
+    .main-navigation>ul {
         position: fixed;
         top: 0;
         right: -400px;
@@ -2108,7 +2132,7 @@ to {
         opacity: 1;
         z-index: 100;
     }
-    .main-navigation ul li {
+    .main-navigation>ul li {
         display: block;
         text-align: left;
         border-bottom: solid 1px rgb(225, 225, 225,0.2);
@@ -2119,7 +2143,7 @@ to {
         transition-delay: 0.4s;
         padding: 10px 40px 20px 40px;
     }
-    .main-navigation ul li:last-child {
+    .main-navigation>ul li:last-child {
         border-bottom: none;
     }
     .toggle-button {
@@ -2151,38 +2175,113 @@ to {
     .app-sidebar-nav .nav{
         flex-direction: row;
     }
- 
-   
-}
-
-@media screen and (max-width: 767px) {
-   
-    .banner-shape-w{
+    /* custom bootstarp */
+    .container, .container-sm {
+        max-width: 100%;
+        padding: 0px 30px;
+    }
+    .counter-area .bg-1 {
+        padding: 25px 10px;
+        margin-top: -20px;
+        margin-bottom: 25px;
+    }
+    .banner-area .banner-shape {
+        position: absolute;
+        bottom: -25px;
+    }
+    .components-area {
+        padding: 80px 0px 70px;
+    }
+    .app-area .app-area-decription {
+        padding: 15px;
+    }
+    .frame-area {
+        padding: 50px 0px;
+    }
+    .frame-area .frame-shape {
         display: none;
     }
-    .app-sidebar-nav .nav .nav-link {
-        font-size: 17px;
-        padding: 10px;
+    .frame-area .frame-area-decription {
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        background: #fff;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
     }
-    .app-sidebar-nav {
-        width: 100%;
-        padding-right: 10px;
+    .frame-area  .frame-item{
+        padding-top: 20px;
     }
-    .app-area .app-sidebar-content-header {
-        margin-top: 20px;
+    .h2-title, .section-title {
+        font-size: 23px;
     }
-    .app-sidebar-content {
-        padding-left: 0px;
-        border: none;
+    body{
+        font-size: 14px;
     }
     
-    .contact-area .contact-grid {
-        grid-template-columns: 1fr;
-    }
-}
-@media screen and (max-width: 575px) {
    
 }
+@media screen and (max-width: 768px) {
+    /* custom bootstarp */
+    .container, .container-sm {
+       max-width: 100%;
+       padding: 0px 20px;
+   }
+   .banner-area .banner-content .section-title {
+       font-size: 30px;
+       line-height: 135%;
+   }
+   .section-sub-title {
+       font-size: 15px;
+       line-height: 23px;
+   }
+   .banner-shape-w{
+       display: none;
+   }
+   .app-sidebar-nav .nav .nav-link {
+       font-size: 17px;
+       padding: 10px;
+   }
+   .app-sidebar-nav {
+        width: 100%;
+        position: sticky;
+        top: 100px;
+        z-index: 12;
+        background: #fff;
+        padding: 10px;
+    }
+   .app-area .app-sidebar-content-header {
+       margin-top: 20px;
+   }
+   .app-sidebar-content {
+       padding-left: 0px;
+       border: none;
+   }
+   
+   .contact-area .contact-grid {
+       grid-template-columns: 1fr;
+   }
+    .faq-area {
+      padding-top: 50px;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .app-area .app-sidebar-content-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .components-area {
+        background-color: var(--primary);
+    }
+    .faq-area{
+        background-color: var(--off-white);
+    }
+}
+
+
+
+
+
 /*   
 @media (min-width: 992px){
     .flex-row-auto {
