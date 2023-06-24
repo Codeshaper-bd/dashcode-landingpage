@@ -1291,6 +1291,7 @@ ul {
     background-image: url(../img/button-arrow.png);
     background-repeat: no-repeat;
     z-index: -1;
+    display: inline-block;
 }
 
 .banner-area .banner-slider-wrapper {
@@ -2217,6 +2218,9 @@ to {
     body{
         font-size: 14px;
     }
+    .creative-area{
+        padding-top: 30px;
+    }
     
    
 }
@@ -2275,6 +2279,10 @@ to {
     }
     .faq-area{
         background-color: var(--off-white);
+    }
+    .banner-area .banner-btn .btn-transparent::after {
+        content: "";
+        display:none;
     }
 }
 
