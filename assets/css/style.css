@@ -1759,6 +1759,19 @@ to {
     z-index: -1;
 }
 /*==========Creative CSS End==========*/
+/*==========Frame CSS Start==========*/
+.frame-area{
+    position: relative;
+    padding: 120px 0px 70px;
+    z-index: 1;
+}
+.frame-area .frame-shape{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    top: 0;
+}
+/*==========Faq CSS Start==========*/
 /*==========Faq CSS Start==========*/
 .faq-area{
     padding-top: 110px;
@@ -2051,6 +2064,14 @@ to {
 
         margin-right: 20px;
     }
+    .header-area .purchase-now .purchase-btn {
+        padding: 11px 14px;
+    }
+    .faq-area {
+        padding-top: 80px;
+        margin-top: 50px;
+        margin-bottom: 0px
+    }
 
 }
 
@@ -2121,11 +2142,7 @@ to {
     .contact-area  .contact-img-a{
         display: none;
     }
-    .faq-area {
-        padding-top: 80px;
-        margin-top: 50px;
-        margin-bottom: 0px
-    }
+ 
    
 }
 
