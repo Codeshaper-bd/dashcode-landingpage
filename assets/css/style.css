@@ -1553,12 +1553,16 @@ to {
 }
 .app-sidebar-nav .nav .nav-link {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     padding: 16px;
     color: #475569;
     display: flex;
     align-items: center;
     gap:5px;
+}
+.app-area .button-group .app-grid-icon svg {
+    width: 30px;
+    height: 30px;
 }
 
 .app-sidebar-nav .nav-pills .nav-link.active, 
@@ -1648,7 +1652,7 @@ to {
     border: 1px solid var(--gray);
     border-radius: 4px;
     display: inline-block;
-    padding: 12px;
+    padding: 8px;
     background-color: transparent;
 }
 .app-area .button-group [class*=button].is-checked svg rect {
@@ -1710,6 +1714,7 @@ to {
     visibility: visible;
     opacity: 1;
 }
+
 /*==========App CSS End==========*/
 
 /*==========Component CSS Start==========*/
@@ -1793,6 +1798,26 @@ to {
     right: 0;
     display: inline-block;
     top: 0;
+}
+.frame-area .frame-area-decription  .section-sub-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 80px;
+}
+.frame-area  .apps-image {
+    height: 42px;
+    width: 42px;
+    background-color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7PX;
+}
+.frame-area  .apps-image img{
+    width: 27px;
 }
 /*==========Faq CSS Start==========*/
 /*==========Faq CSS Start==========*/
@@ -1927,6 +1952,47 @@ to {
 .review-area .owl-carousel.owl-theme .owl-dots .owl-dot.active span {
     background: var(--primary);
 }
+.review-area .review-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 110px;
+
+  }
+/* .review-area .review-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 157px;
+
+  }
+
+  .review-area .review-btn {
+    appearance: none;
+    border: 1px solid #000;
+    padding: 0.5em;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 0.25em;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    -ms-border-radius: 0.25em;
+    -o-border-radius: 0.25em;
+  }
+  .review-area .review-btn::before {
+    content: "see more";
+    text-transform: capitalize;
+  }
+  .review-area .review-btn:checked::before {
+    content: "see less";
+  }
+  .review-area .review-content:has(+ .review-btn:checked) {
+    -webkit-line-clamp: initial;
+  }
+   */
+  
 /*==========Contact CSS Start==========*/
 .contact-area{
     position: relative;
