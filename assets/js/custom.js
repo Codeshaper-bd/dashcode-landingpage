@@ -102,8 +102,12 @@ var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
   percentPosition:true,
-  filter: '.grid-two'
+  filter: '.grid-two',
+  masonry: {
+	columnWidth: 60
+  }
 });
+
 // filter functions
 var filterFns = {
   // show if number is greater than 50

@@ -907,7 +907,7 @@ ul {
     background-color: var(--primary-blue);
     color: var(--white);
     border-radius: 4px;
-    padding: 12px 38px;
+    padding: 12px 27px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     position: relative;
 }
@@ -1696,7 +1696,10 @@ to {
 .app-area  .app-area-decription.comming-soon .apps-image::after{
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
 }
+
 .app-area .app-area-decription .apps-image .content-title,
 .app-area .app-area-decription .apps-image button{
     background: #001E26;
@@ -1707,6 +1710,10 @@ to {
     visibility: hidden;
     opacity: 0;
     z-index: 11;
+}
+.app-area .app-area-decription.comming-soon .apps-image .content-title{
+    visibility: visible;
+    opacity: 1
 }
 .app-area .app-area-decription:hover .apps-image .content-title,
 .app-area  .app-area-decription:hover .apps-image button,
