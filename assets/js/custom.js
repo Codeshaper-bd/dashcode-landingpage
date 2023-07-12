@@ -103,9 +103,6 @@ var $grid = $('.grid').isotope({
   layoutMode: 'fitRows',
   percentPosition:true,
   filter: '.grid-two',
-  masonry: {
-	columnWidth: 60
-  }
 });
 
 // filter functions
@@ -255,7 +252,11 @@ var filterFns = {
 		autoplayTimeout:3000,
 		margin:20,
 		dots:false,
-		nav: false,
+		nav: true,
+        navText: [
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fas fa-arrow-right"></i>',
+        ],
 	
 		responsive:{
 			0:{
@@ -268,7 +269,7 @@ var filterFns = {
 				items:6
 			},
 			1200:{
-				items:9
+				items:7
 			}
 		}
 	});
