@@ -1546,7 +1546,9 @@ to {
 .app-sidebar-nav {
     width: 238px;
     max-width: 100%;
-    padding-right:40px ;
+    padding-right: 40px;
+    position: sticky;
+    top: 128px;
 }
 .app-sidebar-nav .nav{
     flex-direction: column;
