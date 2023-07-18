@@ -246,33 +246,33 @@ var filterFns = {
 	// 	}
 	// });
 	
-	$('.creative-carousel').owlCarousel({
-		loop:true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		margin:20,
-		dots:false,
-		nav: true,
-        navText: [
-            '<i class="fa fa-arrow-left"></i>',
-            '<i class="fas fa-arrow-right"></i>',
-        ],
+	// $('.creative-carousel').owlCarousel({
+	// 	loop:true,
+	// 	autoplay:true,
+	// 	autoplayTimeout:3000,
+	// 	margin:20,
+	// 	dots:false,
+	// 	nav: true,
+    //     navText: [
+    //         '<i class="fa fa-arrow-left"></i>',
+    //         '<i class="fas fa-arrow-right"></i>',
+    //     ],
 	
-		responsive:{
-			0:{
-				items:2
-			},
-			600:{
-				items:4
-			},
-			1000:{
-				items:6
-			},
-			1200:{
-				items:7
-			}
-		}
-	});
+	// 	responsive:{
+	// 		0:{
+	// 			items:2
+	// 		},
+	// 		600:{
+	// 			items:4
+	// 		},
+	// 		1000:{
+	// 			items:6
+	// 		},
+	// 		1200:{
+	// 			items:7
+	// 		}
+	// 	}
+	// });
 
 		// $(window).on('resize', function() {
 		// 	if($(window).width() < 991) {
@@ -280,4 +280,46 @@ var filterFns = {
 		// 	}
 			
 		// });
+
+		$("#nav-tab").on('click', 'a.nav-item', function() {
+            if ($('a.nav-item').hasClass('active')) {
+                $('a.nav-item').removeClass('active');
+            }
+            $(this).addClass('active');
+        });
+
+
+
+        var FeaturesOwl = $('#features .owl-carousel');
+        FeaturesOwl.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: false,
+            center: true,
+            margin: 10,
+            URLhashListener: true,
+            startPosition: 'URLHash',
+            dots: false,
+            // nav: true,
+            // navText: [
+            // '<i class="fa fa-arrow-left"></i>',
+            // '<i class="fas fa-arrow-right"></i>',
+            // ],
+            addClassActive: true
+        });
+        // FeaturesOwl.on('changed.owl.carousel', function(event) {
+        //     location.hash = 'slide' + event.property.value;
+        // });
+        $(function(event) {
+            var hash = $(".owl-item.active").children().attr('data-hash');
+            $('.' + hash).addClass('active');
+        });
+        FeaturesOwl.on('changed.owl.carousel', function(event) {
+            var current = event.item.index;
+            var hash = $(event.target).find(".owl-item").eq(current).children().attr('data-hash');
+            $('.' + hash).siblings().removeClass('active');
+            $('.' + hash).addClass('active');
+        });
+
+
 });

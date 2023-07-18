@@ -1806,18 +1806,33 @@ to {
     top: -130px;
     z-index: -1;
 }
+.creative-area .creative-f a.button-tab svg{
+    max-width: 135px;
+    height: auto;
+}
+.creative-area .creative-f nav{
+    gap: 12px;
+}
+.creative-area .creative-f  a.button-tab:hover svg rect,
+.creative-area .creative-f  a.button-tab.active svg rect {
+        fill: var(--off-white);
+    
+    }
+    .creative-area .creative-f  a.button-tab.active svg{
+        border: 1px solid var(--off-white);
+    }
 .creative-carousel.owl-carousel {
     position: relative;
 }
+
 .creative-carousel.owl-theme .owl-nav [class*=owl-] {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -15%;
     height: 45px;
     width: 45px;
     border-radius: 50%;
     display: flex;
-    background: var(--s-blue-color);
+    background: #000;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -1827,24 +1842,23 @@ to {
     -o-border-radius: 50%;
     color: var(--white);
     font-size: 20px;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+
 }
 
 .creative-carousel .owl-nav button.owl-next {
-    right: -11%;
+    right: -1%;
 }
 
 .creative-carousel .owl-nav button.owl-prev {
-    left: -11%;
+    left: -1%;
+}
+.creative-carousel.owl-carousel .owl-dots.disabled,
+.creative-carousel.owl-carousel .owl-nav.disabled {
+    display: block;
 }
 
-.creative-carousel.owl-theme .owl-nav .disabled {
-    opacity: .0;
-    cursor: default;
-}
+
+
 /*==========Creative CSS End==========*/
 /*==========Frame CSS Start==========*/
 .frame-area{
