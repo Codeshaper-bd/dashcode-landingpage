@@ -300,11 +300,11 @@ var filterFns = {
             URLhashListener: true,
             startPosition: 'URLHash',
             dots: false,
-            // nav: true,
-            // navText: [
-            // '<i class="fa fa-arrow-left"></i>',
-            // '<i class="fas fa-arrow-right"></i>',
-            // ],
+            nav: true,
+            navText: [
+            '<i class="fa fa-arrow-left"></i>',
+            '<i class="fas fa-arrow-right"></i>',
+            ],
             addClassActive: true
         });
         // FeaturesOwl.on('changed.owl.carousel', function(event) {

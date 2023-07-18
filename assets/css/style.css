@@ -1818,9 +1818,7 @@ to {
         fill: var(--off-white);
     
     }
-    .creative-area .creative-f  a.button-tab.active svg{
-        border: 1px solid var(--off-white);
-    }
+ 
 .creative-carousel.owl-carousel {
     position: relative;
 }
@@ -1832,7 +1830,7 @@ to {
     width: 45px;
     border-radius: 50%;
     display: flex;
-    background: #000;
+    background: transparent;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -1840,8 +1838,9 @@ to {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    color: var(--white);
-    font-size: 20px;
+    color: var(--primary-blue);
+    font-size: 18px;
+    border: 1px solid #ddd;
 
 }
 
