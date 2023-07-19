@@ -907,7 +907,7 @@ ul {
     background-color: var(--primary-blue);
     color: var(--white);
     border-radius: 4px;
-    padding: 12px 27px;
+    padding: 12px 17px;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     position: relative;
 }
@@ -1544,12 +1544,32 @@ to {
 
 /*==========App CSS Start==========*/
 .app-sidebar-nav {
-    width: 238px;
+    width: 190px;
     max-width: 100%;
-    padding-right: 40px;
     position: sticky;
+    padding-right: 15px;
     top: 128px;
 }
+.app-sidebar-content-header {
+    /* max-width: 100%;
+    position: sticky;
+    top: 128px;
+    z-index: 5;
+    background-color: #fff; */
+    margin-bottom: 30px;
+}
+
+.small-sidebar span{
+    display: none;
+}
+.small-sidebar {
+    width: 80px;
+}
+.large-container{
+   width: 100%;
+   padding-left: 15px;
+}
+  
 .app-sidebar-nav .nav{
     flex-direction: column;
 }
@@ -1586,17 +1606,17 @@ to {
 .app-sidebar-content{
     min-height: 450px;
     flex: 1;
-    padding-left: 40px;
+    padding-left: 25px;
     border-left: 1px dashed #e1e3ea;
 }
 
 .app-area .app-version-icon  [type="radio"]:checked,
-.app-area [type="radio"]:not(:checked) {
+.app-area .app-version-icon  [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
-.app-area .app-version-icon [type="radio"]:checked + label,
-.app-area .app-version-icon [type="radio"]:not(:checked) + label
+.app-area .app-version-icon  [type="radio"]:checked + label,
+.app-area .app-version-icon  [type="radio"]:not(:checked) + label
 {
     position: relative;
     padding-left: 22px;
@@ -1606,57 +1626,70 @@ to {
     font-size: 16px;
 
 }
-.app-area .app-version-icon [type="radio"]:not(:checked) + label{
+.app-area .app-version-icon  [type="radio"]:not(:checked) + label{
     color: var(--gray);
 }
-.app-area .app-version-icon [type="radio"]:checked + label{
+.app-area .app-version-icon  [type="radio"]:checked + label{
     color: var(--primary);
 }
-.app-area .app-version-icon [type="radio"]:checked + label:before,
-.app-area .app-version-icon [type="radio"]:not(:checked) + label:before {
+.app-area .app-version-icon  [type="radio"]:checked + label:before,
+.app-area .app-version-icon  [type="radio"]:not(:checked) + label:before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     border: 1px solid var(--gray);
     border-radius: 100%;
 }
-.app-area .app-version-icon [type="radio"]:checked + label:before{
+.app-area .app-version-icon  [type="radio"]:checked + label:before{
     border: 1px solid var(--primary-blue);
 }
-.app-area .app-version-icon [type="radio"]:checked + label:after,
-.app-area .app-version-icon [type="radio"]:not(:checked) + label:after {
+
+.app-area .app-version-icon  [type="radio"]:checked + label:after,
+.app-area .app-version-icon  [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 13px;
     background: var(--primary-blue);
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.app-area .app-version-icon [type="radio"]:not(:checked) + label:after {
+
+.app-area .app-version-icon  [type="radio"]:not(:checked) + label:after {
     opacity: 1;
    background:var(--gray);
 
 }
-.app-area .app-version-icon [type="radio"]:checked + label:after {
+.app-area .app-version-icon button [type="radio"]:checked {
     opacity:1;
-   
+    
 }
-
+.app-sidebar-content .nav-pills .nav-link{
+    padding: 0;
+}
+.app-sidebar-content .nav-pills .nav-link.active, 
+.app-sidebar-content .nav-pills .show>.nav-link{
+    background: transparent;
+}
+.app-sidebar-content .nav-pills .app-grid-icon .nav-link,
+.app-area .app-version-icon,
 .app-area  .button-group .lida-lert,
-.app-area  .button-group .app-grid-icon [class*=button] {
+.app-area  .button-group .app-grid-icon [class*=button],
+.app-area .app-version-icon  .app-grid-icon [class*=button]{
     border: 1px solid var(--gray);
     border-radius: 4px;
     display: inline-block;
     padding: 8px;
     background-color: transparent;
 }
+
+.app-sidebar-content .nav-pills .nav-link.active svg rect,
 .app-area .button-group [class*=button].is-checked svg rect {
     fill:var(--primary-blue);
     opacity: 1;
@@ -1669,7 +1702,7 @@ to {
     width: 100%;
 }
 .app-area  .app-area-decription {
-    padding: 24px;
+    padding: 18px;
     background: var(--off-white);
     position: relative;
     transition: all 0.2s ease;
@@ -2236,8 +2269,8 @@ to {
         width: 30px;
         height: 30px;
     }
-    .app-area .app-version-icon [type="radio"]:checked + label,
-     .app-area .app-version-icon [type="radio"]:not(:checked) + label {
+    .app-area .app-version-icon  [type="radio"]:checked + label,
+     .app-area .app-version-icon  [type="radio"]:not(:checked) + label {
         padding-left: 22px;
         font-size: 15px;
     }
