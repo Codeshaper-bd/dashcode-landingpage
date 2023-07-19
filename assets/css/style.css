@@ -1551,25 +1551,14 @@ to {
     top: 128px;
 }
 .app-sidebar-content-header {
-    /* max-width: 100%;
-    position: sticky;
-    top: 128px;
-    z-index: 5;
-    background-color: #fff; */
+
     margin-bottom: 30px;
 }
 
 .small-sidebar span{
     display: none;
 }
-.small-sidebar {
-    width: 80px;
-}
-.large-container{
-   width: 100%;
-   padding-left: 15px;
-}
-  
+
 .app-sidebar-nav .nav{
     flex-direction: column;
 }
@@ -1913,6 +1902,10 @@ to {
     text-overflow: ellipsis;
     overflow: hidden;
     height: 80px;
+    font-size: 17px;
+}
+.frame-area .frame-area-decription .content-title{
+    font-size: 20px;
 }
 .frame-area  .apps-image {
     height: 42px;

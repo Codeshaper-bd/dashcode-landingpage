@@ -233,15 +233,6 @@ $('.partner-carousel').owlCarousel({
             $('.' + hash).siblings().removeClass('active');
             $('.' + hash).addClass('active');
         });
-		var menuIcon = document.querySelector(".menu-icon");
-		var sidebar = document.querySelector(".app-sidebar-nav");
-		var container1 = document.querySelector(".app-sidebar-content");
-		
-		menuIcon.onclick = function () {
-			sidebar.classList.toggle("small-sidebar");
-			container1.classList.toggle("large-container");
-		
-		}
 	
 		
 		
