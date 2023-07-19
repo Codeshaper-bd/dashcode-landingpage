@@ -242,7 +242,7 @@ $('.partner-carousel').owlCarousel({
 			container1.classList.toggle("large-container");
 		
 		}
-		 
+	
 		
 		
 
