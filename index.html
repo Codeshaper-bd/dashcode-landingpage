@@ -57,8 +57,8 @@
                                 <li>
                                     <a href="#">Home</a>
                                 </li>
-                                <li>
-                                    <a href="#">Documentation</a>
+                                <li> 
+                                    <a href="https://dashcode-doc.codeshaper.tech/" target="_blank">Documentation</a>
                                 </li>
                                 <li>
                                     <a href="#">Changelog</a>
@@ -75,7 +75,7 @@
                                 </li>
                                 <li class="lg-none">
                                     <div class="purchase-now">
-                                        <a href="https://themeforest.net/item/dashcode-admin-dashboard-template/42600453" class="common-btn btn-transparent purchase-btn">Purchase Now</a>
+                                        <a target="_blank" href="https://themeforest.net/item/dashcode-admin-dashboard-template/42600453" class="common-btn btn-transparent purchase-btn">Purchase Now</a>
                                     </div>
                                 </li>
                             </ul>
@@ -86,7 +86,7 @@
                 <!-- col-xl-9 col-lg-8 end -->
                 <div class="col-xl-3 col-lg-2 sm-none">
                     <div class="purchase-now text-end">
-                        <a href="https://themeforest.net/item/dashcode-admin-dashboard-template/42600453" class="common-btn btn-transparent purchase-btn">Purchase Now</a>
+                        <a  target="_blank" href="https://themeforest.net/item/dashcode-admin-dashboard-template/42600453" class="common-btn btn-transparent purchase-btn">Purchase Now</a>
                     </div>
                 </div>
                 <!-- col-xl-2 col-lg-2 end -->
@@ -141,15 +141,6 @@
                                 We present you with the most powerful, simplest, and fastest developer-friendly and highly customizable React, Vue, and Tailwind admin templates to build web UI for your app.
                             </p>
                         </div> <!-- com-title end -->
-                       
-                        <div class="banner-btn d-flex">
-                            <a href="https://dashcode.codeshaper.net/" class="common-btn">
-                                View Demo
-                            </a>
-                            <a href="https://dashcode-doc.codeshaper.tech/" class="position-relative common-btn btn-transparent">
-                                View Documentation
-                            </a>
-                        </div>  <!-- banner-btn end -->
                        
                         <div class="counter-box-one d-flex flex-wrap ">
                             <div class="counter-box-content flex-center ">
@@ -206,7 +197,7 @@
                         <div class="counter-box-content text-center">
                             <h3 class="content-title mb-10">Loved By</h3>
                             <div class="d-counter d-flex justify-content-center">
-                                <h2 class="h2-title blue-color counting-data" data-count="10000">0</h2>
+                                <h2 class="h2-title blue-color counting-data" data-count="1600">0</h2>
                                 <span class="h2-title blue-color">+</span>
                             </div>
                         </div> <!--counter-box-content end-->
@@ -216,7 +207,7 @@
                         <div class="counter-box-content text-center">
                             <h3 class="content-title mb-10">Rated 5 Stars</h3>
                             <div class="d-counter d-flex justify-content-center">
-                                <h2 class="h2-title blue-color counting-data" data-count="25">0</h2>
+                                <h2 class="h2-title blue-color counting-data" data-count="30">0</h2>
                                 <span class="h2-title blue-color">+</span>
                             </div>
                         </div> <!--counter-box-content end-->
@@ -226,7 +217,7 @@
                         <div class="counter-box-content text-center">
                             <h3 class="content-title mb-10">End User</h3>
                             <div class="d-counter d-flex justify-content-center">
-                                <h2 class="h2-title blue-color counting-data" data-count="1260">0</h2>
+                                <h2 class="h2-title blue-color counting-data" data-count="10000">0</h2>
                                 <span class="h2-title blue-color">+</span>
                             </div>
                         </div> <!--counter-box-content end-->
@@ -236,7 +227,7 @@
                         <div class="counter-box-content text-center">
                             <h3 class="content-title mb-10">On The Themeforest</h3>
                             <div class="d-counter d-flex justify-content-center">
-                                <h2 class="h2-title blue-color counting-data" data-count="1">6</h2>
+                                <h2 class="h2-title blue-color counting-data" data-count="8">0</h2>
                                 <span class="h2-title blue-color">Month</span>
                             </div>
                         </div> <!--counter-box-content end-->
@@ -300,14 +291,15 @@
             <div class="d-sm-block d-md-flex align-items-start">
                 <div class="app-sidebar-nav flex-lg-row-auto">
                     <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-html-tab" data-bs-toggle="pill" data-bs-target="#v-pills-html" type="button" role="tab" aria-controls="v-pills-html" aria-selected="true">
-                            <img src="assets/img/html-icon.png" alt="html"> 
-                            <span>HTML</span>
-                        </button> <!-- buttton end -->
+                       
                         
-                        <button class="nav-link" id="v-pills-react-tab" data-bs-toggle="pill" data-bs-target="#v-pills-react" type="button" role="tab" aria-controls="v-pills-react" aria-selected="false">
+                        <button class="nav-link active" id="v-pills-react-tab" data-bs-toggle="pill" data-bs-target="#v-pills-react" type="button" role="tab" aria-controls="v-pills-react" aria-selected="false">
                             <img src="assets/img/react-icon.png" alt="react"> 
                             <span>React</span>
+                        </button> <!-- buttton end -->
+                        <button class="nav-link" id="v-pills-next-tab" data-bs-toggle="pill" data-bs-target="#v-pills-next" type="button" role="tab" aria-controls="v-pills-next" aria-selected="false">
+                            <img src="assets/img/next-icon.png" alt="next"> 
+                            <span>Next</span>
                         </button> <!-- buttton end -->
                         
                         <button class="nav-link" id="v-pills-vue-tab" data-bs-toggle="pill" data-bs-target="#v-pills-vue" type="button" role="tab" aria-controls="v-pills-vue" aria-selected="false">
@@ -315,15 +307,17 @@
                             <span>Vue</span>
                         </button> <!-- buttton end -->
 
-                        <button class="nav-link" id="v-pills-next-tab" data-bs-toggle="pill" data-bs-target="#v-pills-next" type="button" role="tab" aria-controls="v-pills-next" aria-selected="false">
-                            <img src="assets/img/next-icon.png" alt="next"> 
-                            <span>Next</span>
-                        </button> <!-- buttton end -->
-
-                       
                         <button class="nav-link" id="v-pills-laravel-tab" data-bs-toggle="pill" data-bs-target="#v-pills-laravel" type="button" role="tab" aria-controls="v-pills-laravel" aria-selected="false">
                             <img src="assets/img/laravel-icon.png" alt="laravel"> 
                             <span>Laravel</span>
+                        </button> <!-- buttton end -->
+                        <button class="nav-link " id="v-pills-html-tab" data-bs-toggle="pill" data-bs-target="#v-pills-html" type="button" role="tab" aria-controls="v-pills-html" aria-selected="true">
+                            <img src="assets/img/html-icon.png" alt="html"> 
+                            <span>HTML</span>
+                        </button> <!-- buttton end -->
+                        <button class="nav-link" id="v-pills-svelte-tab" data-bs-toggle="pill" data-bs-target="#v-pills-svelte" type="button" role="tab" aria-controls="v-pills-svelte" aria-selected="false">
+                            <img src="assets/img/svelte.png" alt="svelte"> 
+                            <span>Svelte</span>
                         </button> <!-- buttton end -->
                         <button class="nav-link" id="v-pills-nuxt-tab" data-bs-toggle="pill" data-bs-target="#v-pills-nuxt" type="button" role="tab" aria-controls="v-pills-nuxt" aria-selected="false">
                             <img src="assets/img/nuxt-icon.png" alt="nuxt"> 
@@ -338,7 +332,7 @@
                 
                 <div class="app-sidebar-content pt-sm-3 pt-lg-0">
                     <div class="tab-content " id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">
+                        <div class="tab-pane fade " id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">
                             <div class="frame-item">
 
                            
@@ -1132,7 +1126,7 @@
                         <!-- tab-pane End --> 
               
                          <!-- tab-pane End --> 
-                        <div class="tab-pane fade" id="v-pills-react" role="tabpanel" aria-labelledby="v-pills-react-tab">
+                        <div class="tab-pane fade show active" id="v-pills-react" role="tabpanel" aria-labelledby="v-pills-react-tab">
                             <div class="frame-item">
 
                            
@@ -1160,6 +1154,10 @@
                                           <rect opacity="0.3" x="28" y="28" width="12" height="12" rx="2" fill="#475569"/>
                                           </svg>
                                     </button>
+                                    <div class="ms-3">
+
+                                        <a target="_blank" href="https://dashcode-react-doc.codeshaper.tech/" class="common-btn ">Documentation</a>
+                                    </div>
                                   </li> 
                                   <div class="m-auto">
   
@@ -1194,7 +1192,7 @@
                                       <div class="row">
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/dashboard">
                                                       <h4 class="section-sub-title text-color">
                                                           Analytics Dashboard 
                                                       </h4>
@@ -1208,7 +1206,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/ecommerce-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/ecommerce">
                                                       <h4 class="section-sub-title text-color">
                                                           Ecommerce Dashboard 
                                                       </h4>
@@ -1222,7 +1220,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/project-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/project">
                                                       <h4 class="section-sub-title text-color">
                                                           Project Dashboard 
                                                       </h4>
@@ -1236,7 +1234,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/crm-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/crm">
                                                       <h4 class="section-sub-title text-color">
                                                           CRM Dashboard 
                                                       </h4>
@@ -1250,7 +1248,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/banking-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/banking">
                                                       <h4 class="section-sub-title text-color">
                                                           Bank Dashboard 
                                                       </h4>
@@ -1264,7 +1262,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/chat.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/chat">
                                                       <h4 class="section-sub-title text-color">
                                                           Chat App
                                                       </h4>
@@ -1278,7 +1276,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/email.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/email">
                                                       <h4 class="section-sub-title text-color">
                                                           Email App
                                                       </h4>
@@ -1292,7 +1290,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/kanban.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/kanban">
                                                       <h4 class="section-sub-title text-color">
                                                           Kanban App
                                                       </h4>
@@ -1307,7 +1305,7 @@
                                           
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/calander.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/calender">
                                                       <h4 class="section-sub-title text-color">
                                                           Calender App
                                                       </h4>
@@ -1321,7 +1319,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/todo.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/todo">
                                                       <h4 class="section-sub-title text-color">
                                                           Todo App
                                                       </h4>
@@ -1335,7 +1333,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/project.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/projects">
                                                       <h4 class="section-sub-title text-color">
                                                           Project App
                                                       </h4>
@@ -1347,198 +1345,173 @@
                                               </div> <!-- app-area-decription end -->
                                           </div> 
                                           <!-- col-md-6  end -->
-                                          <div class="col-md-6  mb-20 d-none">
-                                              <div class="app-area-decription comming-soon">
-                                                  <a href="#">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Calendar App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/apps-2.png" alt="apps" loading="lazy">
-                                                          <h3 class="content-title bg-transparent">Comming Soon</h3>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
+
                                       </div>
                                   </div>
                                   <div class="tab-pane fade" id="pills-gridtworeact" role="tabpanel" aria-labelledby="pills-gridtworeact-tab">
                                       <div class="row">
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/index.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Analytics Dashboard 
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/apps-1.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a>
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/ecommerce-dashboard.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Ecommerce Dashboard 
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/apps-2.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/project-dashboard.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Project Dashboard 
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/project11.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a>
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/crm-dashboard.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          CRM Dashboard 
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/crm11.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/banking-dashboard.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Bank Dashboard 
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/bank.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/chat.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Chat App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Chat.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/email.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Email App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Email.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/kanban.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Kanban App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Kanban.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/calander.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Calender App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Calender.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/todo.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Todo App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Todo.png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20">
-                                              <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/project.html">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Project App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/Project (1).png" alt="apps" loading="lazy">
-                                                          <button class="common-btn">View Demo</button>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
-                                          <!-- col-md-4  end -->
-                                          <div class="col-md-4  mb-20 d-none">
-                                              <div class="app-area-decription comming-soon">
-                                                  <a href="#">
-                                                      <h4 class="section-sub-title text-color">
-                                                          Calendar App
-                                                      </h4>
-                                                      <div class="apps-image">
-                                                          <img src="assets/img/apps-2.png" alt="apps" loading="lazy">
-                                                          <h3 class="content-title bg-transparent">Comming Soon</h3>
-                                                      </div>
-                                                  </a> 
-                                              </div> <!-- app-area-decription end -->
-                                          </div> 
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/dashboard">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Analytics Dashboard 
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/apps-1.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a>
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/ecommerce">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Ecommerce Dashboard 
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/apps-2.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/project">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Project Dashboard 
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/project11.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a>
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/crm">
+                                                    <h4 class="section-sub-title text-color">
+                                                        CRM Dashboard 
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/crm11.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/banking">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Bank Dashboard 
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/bank.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/chat">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Chat App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Chat.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription ">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/email">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Email App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Email.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription ">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/kanban">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Kanban App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Kanban.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/calender">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Calender App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Calender.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/todo">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Todo App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Todo.png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
+                                        <div class="col-md-4  mb-20">
+                                            <div class="app-area-decription">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/projects">
+                                                    <h4 class="section-sub-title text-color">
+                                                        Project App
+                                                    </h4>
+                                                    <div class="apps-image">
+                                                        <img src="assets/img/Project (1).png" alt="apps" loading="lazy">
+                                                        <button class="common-btn">View Demo</button>
+                                                    </div>
+                                                </a> 
+                                            </div> <!-- app-area-decription end -->
+                                        </div> 
+                                        <!-- col-md-4  end -->
                                       </div>
                                    </div>
                                   <div class="tab-pane fade" id="pills-lightreact" role="tabpanel" aria-labelledby="pills-lightreact-tab">
                                       <div class="row">
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/index.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/dashboard">
                                                       <h4 class="section-sub-title text-color">
                                                           Analytics Dashboard 
                                                       </h4>
@@ -1552,7 +1525,7 @@
                                           <!-- col-md-4  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/crm-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/crm">
                                                       <h4 class="section-sub-title text-color">
                                                           CRM Dashboard 
                                                       </h4>
@@ -1566,7 +1539,7 @@
                                           <!-- col-md-4  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/banking-dashboard.html">
+                                                   <a target="_blank" href="https://dashcode-react.codeshaper.net/bank">
                                                       <h4 class="section-sub-title text-color">
                                                           Bank Dashboard 
                                                       </h4>
@@ -1580,7 +1553,7 @@
                                           <!-- col-md-4  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/chat.html">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/chat">
                                                       <h4 class="section-sub-title text-color">
                                                           Chat App
                                                       </h4>
@@ -1594,7 +1567,7 @@
                                           <!-- col-md-4  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/kanban.html">
+                                                   <a target="_blank" href="https://dashcode-react.codeshaper.net/kanban">
                                                       <h4 class="section-sub-title text-color">
                                                           Kanban App
                                                       </h4>
@@ -1608,7 +1581,7 @@
                                           <!-- col-md-4  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/todo.html">
+                                                    <a target="_blank" href="https://dashcode-react.codeshaper.net/todo">
                                                       <h4 class="section-sub-title text-color">
                                                           Todo App
                                                       </h4>
@@ -1627,7 +1600,7 @@
       
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/ecommerce-dashboard.html">
+                                                  <a target="_blank" href="https://dashcode-react.codeshaper.net/dashboard">
                                                       <h4 class="section-sub-title text-color">
                                                           Ecommerce Dashboard 
                                                       </h4>
@@ -1641,7 +1614,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/project-dashboard.html">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/prject">
                                                       <h4 class="section-sub-title text-color">
                                                           Project Dashboard 
                                                       </h4>
@@ -1656,7 +1629,7 @@
                                           <!-- col-md-6  end -->
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription ">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/email.html">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/email">
                                                       <h4 class="section-sub-title text-color">
                                                           Email App
                                                       </h4>
@@ -1673,7 +1646,7 @@
                                           
                                           <div class="col-md-6  mb-20">
                                               <div class="app-area-decription">
-                                                  <a target="_blank" href="https://dashcode-html.codeshaper.tech/calander.html">
+                                                <a target="_blank" href="https://dashcode-react.codeshaper.net/chat">
                                                       <h4 class="section-sub-title text-color">
                                                           Calender App
                                                       </h4>
@@ -4323,6 +4296,27 @@
                          <div class="tab-pane fade" id="v-pills-angular" role="tabpanel" aria-labelledby="v-pills-angular-tab"> 
                             <div class="frame-item">
                                 <h4 class="content-title text-color pb-15">Angular Version
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-6  mb-20">
+                                        <div class="app-area-decription comming-soon">
+                                            <a target="_blank" href="#">
+                                                <h4 class="section-sub-title text-color">
+                                                     Dashboard 
+                                                </h4>
+                                                <div class="apps-image">
+                                                    <img src="assets/img/apps-2.png" alt="apps" loading="lazy">
+                                                    <h3 class="content-title bg-transparent">Comming Soon</h3>
+                                                </div>
+                                            </a>
+                                        </div> <!-- app-area-decription end -->
+                                    </div> 
+                                </div>
+                            </div>
+                         </div>
+                         <div class="tab-pane fade" id="v-pills-svelte" role="tabpanel" aria-labelledby="v-pills-svelte-tab"> 
+                            <div class="frame-item">
+                                <h4 class="content-title text-color pb-15">Svelte Version
                                 </h4>
                                 <div class="row">
                                     <div class="col-md-6  mb-20">
