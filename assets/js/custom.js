@@ -18,15 +18,15 @@ $(document).ready(function($) {
         $(this).css("background-image", "url(" + $(this).attr("data-background") + ")")
     });
 
-	    // Sticky Header JS Start
-		$(window).on( 'scroll', function(){
-			if ($(window).scrollTop() >= 100) {
-				$('.header-area').addClass('sticky-header');
-			}
-			else {
-				$('.header-area').removeClass('sticky-header');
-			}
-		});
+	// Sticky Header JS Start
+	$(window).on( 'scroll', function(){
+		if ($(window).scrollTop() >= 100) {
+			$('.header-area').addClass('sticky-header');
+		}
+		else {
+			$('.header-area').removeClass('sticky-header');
+		}
+	});
 	var a = 0;
 	var b = 0;
 	$(window).on('scroll', function() {
@@ -119,10 +119,6 @@ $('.partner-carousel').owlCarousel({
     }
 });
 
-
-
-
-  // filter functions
   	// Toggle Menu Mobile JS Two
 	$(".toggle-button").on( 'click', function(){
 		$(".main-navigation").toggleClass('toggle-menu');
@@ -141,59 +137,12 @@ $('.partner-carousel').owlCarousel({
 		$(".main-navigation").removeClass('toggle-menu');
 	});
 
-	// $(window).on("load resize", function() {
-	// 	if($(window).width < 991){
-	// 	 $('.owl-carousel').hide();
-	// 	}
-	// 	else{
-	// 	 $('.owl-group').show();
-	// 	}
-	// });
-	
-	// $('.creative-carousel').owlCarousel({
-	// 	loop:true,
-	// 	autoplay:true,
-	// 	autoplayTimeout:3000,
-	// 	margin:20,
-	// 	dots:false,
-	// 	nav: true,
-    //     navText: [
-    //         '<i class="fa fa-arrow-left"></i>',
-    //         '<i class="fas fa-arrow-right"></i>',
-    //     ],
-	
-	// 	responsive:{
-	// 		0:{
-	// 			items:2
-	// 		},
-	// 		600:{
-	// 			items:4
-	// 		},
-	// 		1000:{
-	// 			items:6
-	// 		},
-	// 		1200:{
-	// 			items:7
-	// 		}
-	// 	}
-	// });
-
-		// $(window).on('resize', function() {
-		// 	if($(window).width() < 991) {
-		// 		$('.creative-carousel').addClass('owl-carousel');
-		// 	}
-			
-		// });
-
 		$("#nav-tab").on('click', 'a.nav-item', function() {
             if ($('a.nav-item').hasClass('active')) {
                 $('a.nav-item').removeClass('active');
             }
             $(this).addClass('active');
         });
-
-
-
         var FeaturesOwl = $('#features .owl-carousel');
         FeaturesOwl.owlCarousel({
             items: 1,
@@ -240,6 +189,9 @@ $('.partner-carousel').owlCarousel({
 					items: 2
 				},
 				1000: {
+					items: 3
+				},
+				1200: {
 					items: 4
 				}
 			}

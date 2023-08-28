@@ -1916,10 +1916,10 @@ to {
 }
 .applications-carousel .owl-nav button.owl-prev {
     right: auto;
-    left: -5%;
+    left: -4%;
 }
 .applications-carousel .owl-nav button.owl-next {
-    right: -5%;
+    right: -4%;
     left: auto;
 }
 .applications-item .content-title{
@@ -2142,7 +2142,7 @@ to {
 .contact-area .contact-wrapper {
     border-radius: 12px;
     background: #003543;
-    padding: 65px 110px;
+    padding: 62px 110px;
 }
 .contact-area .contact-grid {
     display: grid;
@@ -2250,10 +2250,13 @@ to {
      .com-title .section-sub-title br {
         display: none;
      }
+     .applications-carousel .owl-nav button.owl-prev {
+        left: -2%;
+    }
+    .applications-carousel .owl-nav button.owl-next {
+        right: -2%;
+    }
  }
-
-
-
 @media screen and (max-width: 1199px) {
     .common-btn {
         font-size: 14px;
@@ -2319,13 +2322,6 @@ to {
     .footer-area {
         padding: 120px 0px 100px;
     }
-    .applications-carousel .owl-nav button.owl-prev {
-        left: -2%;
-    }
-    .applications-carousel .owl-nav button.owl-next {
-        right: -2%;
-    }
-
 }
 @media screen and (max-width: 992px) {
     
@@ -2335,7 +2331,6 @@ to {
     .sm-none{
         display: none;
     }
-    
     .main-navigation>ul {
         position: fixed;
         top: 0;
