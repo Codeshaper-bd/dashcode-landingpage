@@ -1075,6 +1075,7 @@ ul {
     box-shadow: 6px 6px 60px 0px rgba(0,0,0,0.1);
     transition: 0.3s;
      animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+     padding: 15px 0px;
     
 }
 
@@ -1175,19 +1176,23 @@ ul {
         opacity: 1;
     }
 }
-
+.common-btn-two,
 .header-area  .purchase-now .purchase-btn{
     background: none;
     border: 1px solid;
     border-image-slice: 1;
     border-image-source: linear-gradient(90deg, #082F90 0%, #3B82F6 34.9%, #387DF0 65.52%, #022685 100%);
-    padding: 12px 18px;
+    padding: 12px 15px;
 
 }
+.common-btn-two{
+    background:  var(--primary);
+}
+
 .toggle-button {
     position: fixed;
     right: 28px;
-    top: 20px;
+    top: 5px;
     width: 60px;
     height: 60px;
     padding: 0 15px;
@@ -1271,7 +1276,7 @@ ul {
     right: auto;
 }
 .banner-area .counter-box-one  {
-   padding-top: 70px;
+   padding-top: 50px;
    gap: 15px;
 }
 .banner-area .counter-box-one .counter-box-content {
@@ -1527,12 +1532,14 @@ to {
     background-color:#012A35;
   }
   .partner-carousel.owl-carousel .owl-item img{
-    max-width: 100%; 
+    max-width: 100%;
     width: auto;
+    height: 45px;
+    margin: auto;
   }
   .partner-img img {
-    filter: grayscale(100%);
-    opacity: 0.9;
+    filter: grayscale(80%);
+    opacity: 0.7;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
  
 }
@@ -1704,6 +1711,7 @@ to {
 .app-area  .app-area-decription .apps-image{
     position: relative;
 }
+.applications-item::after,
 .app-area  .app-area-decription.comming-soon .apps-image::after,
 .app-area  .app-area-decription .apps-image::after {
     content: "";
@@ -1717,13 +1725,14 @@ to {
     opacity: 0;
     border-radius: 6px;
 }
+
 .app-area  .app-area-decription.comming-soon .apps-image::after{
     background: rgba(15, 23, 42, 0.4);
     backdrop-filter: blur(5px);
     visibility: visible;
     opacity: 1;
 }
-
+.applications-item .content-title,
 .app-area .app-area-decription .apps-image .content-title,
 .app-area .app-area-decription .apps-image button{
     background: #001E26;
@@ -1735,10 +1744,15 @@ to {
     opacity: 0;
     z-index: 11;
 }
+
+
 .app-area .app-area-decription.comming-soon .apps-image .content-title{
     visibility: visible;
     opacity: 1
 }
+
+.applications-item:hover::after,
+.applications-item:hover .content-title,
 .app-area .app-area-decription:hover .apps-image .content-title,
 .app-area  .app-area-decription:hover .apps-image button,
 .app-area  .app-area-decription:hover .apps-image::after{
@@ -1880,7 +1894,44 @@ to {
     display: block;
 }
 
-
+.applications-carousel.owl-theme .owl-nav [class*=owl-] {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color:#14024e;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color:#e2e8f0;
+}
+.applications-carousel .owl-nav button.owl-prev {
+    right: auto;
+    left: -5%;
+}
+.applications-carousel .owl-nav button.owl-next {
+    right: -5%;
+    left: auto;
+}
+.applications-item .content-title{
+    background-color: transparent;
+}
+.applications-item::after{
+    background: linear-gradient(0deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8));
+}
+.applications-carousel.owl-theme .owl-nav [class*=owl-]:hover {
+    background-color:#001E26;
+    color: var(--white);
+}
 
 /*==========Creative CSS End==========*/
 /*==========Frame CSS Start==========*/
@@ -1908,13 +1959,28 @@ to {
     font-size: 20px;
 }
 .frame-area  .apps-image {
-    height: 42px;
-    width: 42px;
-    background-color: var(--off-white);
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7PX;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+.frame-area .apps-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../img/auto-inject\ 1.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-position: center;
+    background-size: 100%;
+    z-index: -1;
 }
 .frame-area  .apps-image img{
     width: 27px;
@@ -2060,38 +2126,7 @@ to {
     min-height: 110px;
 
   }
-/* .review-area .review-content {
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    min-height: 157px;
 
-  }
-
-  .review-area .review-btn {
-    appearance: none;
-    border: 1px solid #000;
-    padding: 0.5em;
-    cursor: pointer;
-    width: fit-content;
-    border-radius: 0.25em;
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    -ms-border-radius: 0.25em;
-    -o-border-radius: 0.25em;
-  }
-  .review-area .review-btn::before {
-    content: "see more";
-    text-transform: capitalize;
-  }
-  .review-area .review-btn:checked::before {
-    content: "see less";
-  }
-  .review-area .review-content:has(+ .review-btn:checked) {
-    -webkit-line-clamp: initial;
-  }
-   */
   
 /*==========Contact CSS Start==========*/
 .contact-area{
@@ -2127,7 +2162,9 @@ to {
 .contact-area .contact-img-a .contact-r-img {
     right: 0;
     left: auto;
+    transform: rotate(180deg);
 }
+
 /*==========Contact CSS End==========*/
 /*==========Footer CSS Start==========*/
 .footer-area {
@@ -2161,6 +2198,19 @@ to {
 .footer-social a:hover {
     background: var(--primary-blue);
     color: var(--white);
+}
+.copy-right {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0px;
+    background-color: var(--primary);
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.copy-right p{
+   color: #fff;
 }
 /*==========Footer CSS End==========*/
 
@@ -2200,7 +2250,6 @@ to {
      .com-title .section-sub-title br {
         display: none;
      }
-    
  }
 
 
@@ -2208,7 +2257,7 @@ to {
 @media screen and (max-width: 1199px) {
     .common-btn {
         font-size: 14px;
-        padding: 12px 25px;
+        padding: 12px 14px;
     }
     .h2-title, .section-title {
         font-size: 25px;
@@ -2268,12 +2317,21 @@ to {
         font-size: 15px;
     }
     .footer-area {
-        padding: 150px 0px 70px;
+        padding: 120px 0px 100px;
+    }
+    .applications-carousel .owl-nav button.owl-prev {
+        left: -2%;
+    }
+    .applications-carousel .owl-nav button.owl-next {
+        right: -2%;
     }
 
 }
 @media screen and (max-width: 992px) {
     
+    .frame-area .apps-image {
+        margin: 0 auto;
+    }
     .sm-none{
         display: none;
     }
@@ -2414,7 +2472,7 @@ to {
    .app-sidebar-nav {
         width: 100%;
         position: sticky;
-        top: 100px;
+        top: 70px;
         z-index: 12;
         background: #fff;
         padding: 10px;
@@ -2452,22 +2510,3 @@ to {
     }
 }
 
-
-
-
-
-/*   
-@media (min-width: 992px){
-    .flex-row-auto {
-        flex: 0 0 auto;
-    }
-}
- */
-
-/* @media (min-width: 1300px){
-    .container{
-        max-width: 1920px;
-        padding-right: 160px;
-        padding-left: 160px;
-    } 
-} */

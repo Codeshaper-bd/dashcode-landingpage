@@ -140,7 +140,51 @@ $('.partner-carousel').owlCarousel({
 		$(this).fadeOut();
 		$(".main-navigation").removeClass('toggle-menu');
 	});
+
+	// $(window).on("load resize", function() {
+	// 	if($(window).width < 991){
+	// 	 $('.owl-carousel').hide();
+	// 	}
+	// 	else{
+	// 	 $('.owl-group').show();
+	// 	}
+	// });
 	
+	// $('.creative-carousel').owlCarousel({
+	// 	loop:true,
+	// 	autoplay:true,
+	// 	autoplayTimeout:3000,
+	// 	margin:20,
+	// 	dots:false,
+	// 	nav: true,
+    //     navText: [
+    //         '<i class="fa fa-arrow-left"></i>',
+    //         '<i class="fas fa-arrow-right"></i>',
+    //     ],
+	
+	// 	responsive:{
+	// 		0:{
+	// 			items:2
+	// 		},
+	// 		600:{
+	// 			items:4
+	// 		},
+	// 		1000:{
+	// 			items:6
+	// 		},
+	// 		1200:{
+	// 			items:7
+	// 		}
+	// 	}
+	// });
+
+		// $(window).on('resize', function() {
+		// 	if($(window).width() < 991) {
+		// 		$('.creative-carousel').addClass('owl-carousel');
+		// 	}
+			
+		// });
+
 		$("#nav-tab").on('click', 'a.nav-item', function() {
             if ($('a.nav-item').hasClass('active')) {
                 $('a.nav-item').removeClass('active');
@@ -167,9 +211,6 @@ $('.partner-carousel').owlCarousel({
             ],
             addClassActive: true
         });
-        // FeaturesOwl.on('changed.owl.carousel', function(event) {
-        //     location.hash = 'slide' + event.property.value;
-        // });
         $(function(event) {
             var hash = $(".owl-item.active").children().attr('data-hash');
             $('.' + hash).addClass('active');
@@ -181,7 +222,28 @@ $('.partner-carousel').owlCarousel({
             $('.' + hash).addClass('active');
         });
 	
-		
+		// owl carousel 
+		$('.applications-carousel').owlCarousel({
+			loop: true,
+			margin: 15,
+			nav: true,
+			navText: [
+				'<i class="fa fa-angle-left"></i>',
+				'<i class="fa fa-angle-right"></i>',
+			],
+			dots: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				600: {
+					items: 2
+				},
+				1000: {
+					items: 4
+				}
+			}
+		});
 		
 
 });
