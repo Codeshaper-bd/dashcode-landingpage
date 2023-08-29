@@ -2587,8 +2587,8 @@ to {
         display:none;
     }
     .common-btn {
-        font-size: 14px;
-        padding: 8px 8px;
+        font-size: 13px;
+        padding: 8px 7px;
     }
     .frame-item li {
         margin-bottom: 10px;
@@ -2603,6 +2603,10 @@ to {
     }
     .creative-area .creative-f a.button-tab svg {
         max-width: 80px;
+    }
+    .footer-logo img,
+    .logo img {
+        max-width: 50%;
     }
 }
 
