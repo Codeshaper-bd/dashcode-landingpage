@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DashCode</title>
+    <meta name="keywords" content="DashCode" />
+    <meta name="description" content="DashCode" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Carousel Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header-area text-xl-center p-5">
+
+        <div class=" d-inline-block">
+            <a target="_blank" href="https://themeforest.net/item/dashcode-admin-dashboard-template/42600453" class="common-btn btn-transparent purchase-btn ">Purchase Now</a>
+          </div>
+    </header>
+      
+   <style>
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ .purchase-btn {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #082F90 0%, #3B82F6 34.9%, #387DF0 65.52%, #022685 100%);
+    
+    padding: 12px 15px;
+}
+.purchase-btn:hover{
+
+
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      #082F90 0deg 90deg,
+      #3B82F6 90deg 180deg,
+      #022685 180deg 270deg,
+      #082F90 270deg 360deg
+    )
+    1 stretch;
+ 
+
+}
+
+/** show a warning in browers that don't support it **/
+
+/* Animate when Houdini is available */
+@supports (background: paint(houdini)) {
+  @property --opacity {
+    syntax: "<number>";
+    initial-value: 0.5;
+    inherits: false;
+  }
+
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  @keyframes opacityChange {
+    to {
+      --opacity: 1;
+    }
+  }
+
+  @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+
+  .purchase-btn {
+    animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
+  }
+
+  /* Hide the warning */
+  .warning {
+    display: none;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 0.5em;
+
+  text-align: center;
+  line-height: 1.42;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+      </style>
+      </body>
+<!-- Jquery JS Link -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap JS Link -->
+<script src="assets/js/popper.min.js"></script>
+<!-- carousel slider JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<!-- Custom JS Link -->
+<script src="assets/js/custom.js"></script> 
+
+</body>
+</html>
