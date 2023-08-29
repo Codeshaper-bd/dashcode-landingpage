@@ -108,7 +108,7 @@ $('.partner-carousel').owlCarousel({
             items:2
         },
         600:{
-            items:2
+            items:3
         },
 		1000:{
             items:4
@@ -158,7 +158,8 @@ $('.partner-carousel').owlCarousel({
             '<i class="fa fa-arrow-left"></i>',
             '<i class="fas fa-arrow-right"></i>',
             ],
-            addClassActive: true
+            addClassActive: true,
+			
         });
         $(function(event) {
             var hash = $(".owl-item.active").children().attr('data-hash');

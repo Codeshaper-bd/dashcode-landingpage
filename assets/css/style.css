@@ -1193,8 +1193,8 @@ ul {
     position: fixed;
     right: 28px;
     top: 5px;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     padding: 0 15px;
     background: #012A35;
     border-radius: 100%;
@@ -1206,7 +1206,7 @@ ul {
 
 }
 .toggle-button span {
-    width: 30px;
+    width: 28px;
     height: 3px;
     background: #ffffff;
     display: block;
@@ -1218,7 +1218,7 @@ ul {
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
 }
 .toggle-button .toggle-width-two {
-    width: 25px;
+    width: 22px;
 }
 .toggle-button span:last-child {
     margin-bottom: 0;
@@ -1555,7 +1555,7 @@ to {
     max-width: 100%;
     position: sticky;
     padding-right: 15px;
-    top: 128px;
+    top: 105px;
 }
 .app-sidebar-content-header {
 
@@ -1863,7 +1863,7 @@ to {
 
 .creative-carousel.owl-theme .owl-nav [class*=owl-] {
     position: absolute;
-    top: -15%;
+    top: -75px;
     height: 45px;
     width: 45px;
     border-radius: 50%;
@@ -2158,6 +2158,7 @@ to {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
 }
 .contact-area .contact-img-a .contact-r-img {
     right: 0;
@@ -2289,8 +2290,9 @@ to {
         padding: 13px;
     }
     .app-sidebar-nav {
-        width: 200px;
+        width: 140px;
         padding-right: 10px;
+        top: 80px;
     }
     .app-sidebar-content {
         padding-left: 20px;
@@ -2321,6 +2323,44 @@ to {
     }
     .footer-area {
         padding: 120px 0px 100px;
+    }
+
+    .creative-carousel.owl-theme .owl-nav [class*=owl-] {
+        top: -70px;
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+    .components-area  svg {
+        max-width: 40px;
+        height: 40px;
+    }
+    .components-area .component-img.pb-15 {
+        padding-bottom: 10px;
+    }
+    
+    .creative-area .creative-f nav {
+        gap: 8px;
+    }
+    .creative-carousel .owl-nav button.owl-prev {
+        left: -1.5%;
+    }
+    .creative-carousel .owl-nav button.owl-next {
+        right: -1.5%;
+    }
+    .creative-area .creative-f a.button-tab svg {
+        max-width: 110px;
+    }
+    .frame-area-decription.mb-35 {
+        margin-bottom: 20px;
+    }
+    .font-20 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .section-sub-title {
+        font-size: 17px;
+        line-height: 25px;
     }
 }
 @media screen and (max-width: 992px) {
@@ -2398,7 +2438,7 @@ to {
     /* custom bootstarp */
     .container, .container-sm {
         max-width: 100%;
-        padding: 0px 30px;
+        padding: 0px 20px;
     }
     .counter-area .bg-1 {
         padding: 25px 10px;
@@ -2416,7 +2456,7 @@ to {
         padding: 15px;
     }
     .frame-area {
-        padding: 50px 0px;
+        padding: 50px 0px 25px;
     }
     .frame-area .frame-shape {
         display: none;
@@ -2429,7 +2469,8 @@ to {
         border-radius: 10px;
     }
     .frame-area  .frame-item{
-        padding-top: 20px;
+        padding-top: 0px;
+        padding-bottom: 25px;
     }
     .h2-title, .section-title {
         font-size: 23px;
@@ -2440,14 +2481,46 @@ to {
     .creative-area{
         padding-top: 30px;
     }
-    
+    .frame-area .frame-area-decription .content-title,
+    .content-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .component-content  .content-title {
+        font-size: 16px;
+    }
+    .components-area .component-content {
+        height: 150px;
+    }
+    .creative-area .creative-f a.button-tab svg {
+        max-width: 120px;
+    }
+    .partner-area .con-pt-50 {
+        padding-top: 45x;
+    }
+   .frame-item li svg {
+        width: 35px;
+        height: 35px;
+    }
+    .app-sidebar-content .nav-pills .app-grid-icon .nav-link, .app-area .app-version-icon, .app-area .button-group .lida-lert, .app-area .button-group .app-grid-icon [class*=button], .app-area .app-version-icon .app-grid-icon [class*=button] {
+        padding: 7px;
+    }
+    .pt-50 {
+        padding-top: 35px;
+    }
+    .review-area .review-content {
+        min-height: 80px;
+    }
+    .footer-area {
+        margin-top: -80px;
+    }
    
 }
 @media screen and (max-width: 768px) {
     /* custom bootstarp */
     .container, .container-sm {
        max-width: 100%;
-       padding: 0px 20px;
+       padding: 0px 15px;
    }
    .banner-area .banner-content .section-title {
        font-size: 30px;
@@ -2455,19 +2528,23 @@ to {
    }
    .section-sub-title {
        font-size: 15px;
-       line-height: 23px;
+       line-height: 21px;
    }
+   .frame-area .frame-area-decription .section-sub-title {
+        height: 65px;
+        font-size: 16px;
+    }
    .banner-shape-w{
        display: none;
    }
    .app-sidebar-nav .nav .nav-link {
-       font-size: 17px;
-       padding: 10px;
+       font-size: 14px;
+       padding: 8px;
    }
    .app-sidebar-nav {
         width: 100%;
         position: sticky;
-        top: 70px;
+        top: 68px;
         z-index: 12;
         background: #fff;
         padding: 10px;
@@ -2486,13 +2563,19 @@ to {
     .faq-area {
       padding-top: 50px;
     }
+    .app-sidebar-nav span{
+        display: none;
+    }
+    .creative-area .creative-f a.button-tab svg {
+        max-width: 100px;
+    }
+    .app-sidebar-content-header {
+        margin-bottom: 25px;
+    }
 
 }
 @media screen and (max-width: 575px) {
-    .app-area .app-sidebar-content-header {
-        flex-direction: column;
-        gap: 15px;
-    }
+
     .components-area {
         background-color: var(--primary);
     }
@@ -2502,6 +2585,24 @@ to {
     .banner-area .banner-btn .btn-transparent::after {
         content: "";
         display:none;
+    }
+    .common-btn {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+    .frame-item li {
+        margin-bottom: 10px;
+    }
+    .frame-item li svg {
+        width: 30px;
+        height: 30px;
+    }
+    .app-area .app-version-icon [type="radio"]:checked + label, .app-area .app-version-icon [type="radio"]:not(:checked) + label {
+        padding-left: 19px;
+        font-size: 13px;
+    }
+    .creative-area .creative-f a.button-tab svg {
+        max-width: 80px;
     }
 }
 
