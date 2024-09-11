@@ -1279,7 +1279,6 @@ ul {
   border: 1px solid #ffffff;
   position: relative;
   padding: 10px;
-
 }
 
 .banner-area .banner-content .section-title .custom-heading .top-left {
@@ -1839,15 +1838,16 @@ ul {
 .components-area .component-grid-6 {
   display: grid;
   /* grid-template-columns:repeat( auto-fit, minmax(250px, 1fr) ); */
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 15px;
-  padding-bottom: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  grid-auto-rows: minmax(126px, auto);
+  grid-gap: 20px;
+  padding-bottom: 20px;
 }
 .components-area .component-content {
   background: rgba(71, 85, 105, 0.5);
   backdrop-filter: blur(7.5px);
   border-radius: 6px;
-  height: 176px;
+  height: 126px;
   display: flex;
   flex-direction: column;
   justify-content: center;
