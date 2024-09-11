@@ -1259,6 +1259,11 @@ ul {
   font-size: 42px;
   line-height: 140%;
 }
+.banner-area .banner-content .section-title .custom-heading {
+  background: linear-gradient(90deg, #ffaf31, #fe4bb5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .banner-area .banner-content .banner-btn {
   padding-top: 45px;
   gap: 32px;
@@ -1936,7 +1941,7 @@ ul {
   top: 0;
 }
 .frame-area .frame-area-decription {
-  background-color: #F1F5F9;
+  background-color: #f1f5f9;
   padding: 20px;
   border-radius: 6px;
 }
@@ -2009,9 +2014,21 @@ ul {
 .faq-area .accordion-button {
   border-radius: 4px 4px 0px 0px;
 }
+
 .accordion-button::after {
-background-color: #ffff;
-border-radius: 50%;
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(../img/circle-plus-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/circle-minus-svgrepo-com.svg);
+  transform: rotate(-180deg);
 }
 .faq-area .accordion-button:not(.collapsed) {
   color: var(--primary);
