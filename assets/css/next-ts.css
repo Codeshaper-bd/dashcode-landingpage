@@ -1257,13 +1257,62 @@ ul {
 }
 .banner-area .banner-content .section-title {
   font-size: 42px;
-  line-height: 140%;
+  line-height: 150%;
 }
-.banner-area .banner-content .section-title .custom-heading {
+
+.banner-area .banner-content .section-title .custom-heading-1 {
+  margin: 0 0 0 10px;
+}
+.banner-area .banner-content .section-title .custom-heading-background {
+  background-color: #012a35;
+  padding: 10px 0;
+}
+.banner-area
+  .banner-content
+  .section-title
+  .custom-heading-background
+  .custom-heading {
   background: linear-gradient(90deg, #ffaf31, #fe4bb5);
   font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border: 1px solid #ffffff;
+  position: relative;
+  padding: 10px;
+
+}
+
+.banner-area .banner-content .section-title .custom-heading .top-left {
+  height: 5px;
+  width: 5px;
+  background: #ffffff;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.banner-area .banner-content .section-title .custom-heading .top-right {
+  height: 5px;
+  width: 5px;
+  background: #ffffff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.banner-area .banner-content .section-title .custom-heading .bottom-left {
+  height: 5px;
+  width: 5px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+.banner-area .banner-content .section-title .custom-heading .bottom-right {
+  height: 5px;
+  width: 5px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
 }
 .banner-area .banner-content .banner-btn {
   padding-top: 45px;
