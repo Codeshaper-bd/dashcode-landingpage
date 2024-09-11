@@ -1242,7 +1242,7 @@ ul {
   position: relative;
   background: var(--primary);
   padding-top: 150px;
-  padding-bottom:200px;
+  padding-bottom: 200px;
   z-index: 2;
 }
 .banner-area::after {
@@ -1368,8 +1368,8 @@ ul {
   bottom: -70px;
 }
 .banner-shape-1 {
-  top: 150px;
-  left: 50px;
+  top: 20%;
+  left: 5%;
   animation: rotateme 30s infinite alternate;
   -webkit-animation: rotateme 30s infinite alternate;
   -moz-animation: rotateme 30s infinite alternate;
@@ -1384,8 +1384,8 @@ ul {
 }
 
 .banner-area .banner-shape-3 {
-  left: 41%;
-  top: 15%;
+  left: 20%;
+  top: 10%;
   animation: bounce 2s infinite alternate;
   -webkit-animation: bounce 2s infinite alternate;
 }
@@ -1532,13 +1532,10 @@ ul {
   bottom: 0px;
   width: 100%;
   height: 100%;
-  
 }
-.partner-area .partner-shape img{
-
+.partner-area .partner-shape img {
   width: 100%;
   height: 100%;
-
 }
 .partner-carousel.owl-carousel .owl-item img {
   max-width: 100%;
@@ -1784,7 +1781,10 @@ ul {
   padding: 110px 0px 200px;
 }
 .components-area .bottom-shape {
-  bottom: -1px;
+  bottom: -3px;
+}
+.components-area .bottom-shape img{
+  width: 100%;
 }
 .components-area .component-grid-6 {
   display: grid;
@@ -1947,7 +1947,7 @@ ul {
 /*==========Frame CSS Start==========*/
 .frame-area {
   position: relative;
-  padding: 120px 0px 70px;
+  padding: 120px 0px 120px;
   z-index: 1;
 }
 .frame-area .frame-shape {
@@ -1955,6 +1955,12 @@ ul {
   right: 0;
   display: inline-block;
   top: 0;
+}
+.frame-area .frame-shape-footer {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  bottom: 0;
 }
 .frame-area .frame-area-decription {
   background-color: #f1f5f9;
@@ -2005,16 +2011,24 @@ ul {
 /*==========Faq CSS Start==========*/
 /*==========Faq CSS Start==========*/
 .faq-area {
-  padding-top: 110px;
   margin-top: 150px;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .faq-area .top-faq {
   position: absolute;
-  z-index: -1;
-  top: -20%;
+  top: -17%;
   width: 100%;
+}
+.faq-area .top-faq img{
+  width: 100%;
+}
+.faq-area .bottom-shape img{
+  width: 100%;
+}
+.faq-bg {
+  background-color: #f1f5f9;
 }
 
 .accordion-item {
