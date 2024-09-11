@@ -1261,6 +1261,7 @@ ul {
 }
 .banner-area .banner-content .section-title .custom-heading {
   background: linear-gradient(90deg, #ffaf31, #fe4bb5);
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1783,7 +1784,7 @@ ul {
 .components-area .bottom-shape {
   bottom: -3px;
 }
-.components-area .bottom-shape img{
+.components-area .bottom-shape img {
   width: 100%;
 }
 .components-area .component-grid-6 {
@@ -2021,10 +2022,10 @@ ul {
   top: -17%;
   width: 100%;
 }
-.faq-area .top-faq img{
+.faq-area .top-faq img {
   width: 100%;
 }
-.faq-area .bottom-shape img{
+.faq-area .bottom-shape img {
   width: 100%;
 }
 .faq-bg {
