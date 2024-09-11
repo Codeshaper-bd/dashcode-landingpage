@@ -1242,7 +1242,7 @@ ul {
   position: relative;
   background: var(--primary);
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom:200px;
   z-index: 2;
 }
 .banner-area::after {
@@ -1523,13 +1523,22 @@ ul {
 
 .partner-area {
   position: relative;
-  margin-top: -70px !important;
+  margin-top: -110px !important;
   background-color: transparent;
   z-index: 2;
 }
 .partner-area .partner-shape {
   position: absolute;
-  bottom: -70px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  
+}
+.partner-area .partner-shape img{
+
+  width: 100%;
+  height: 100%;
+
 }
 .partner-carousel.owl-carousel .owl-item img {
   max-width: 100%;
