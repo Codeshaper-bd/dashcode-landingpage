@@ -2143,7 +2143,7 @@ ul {
 /*==========Faq CSS Start==========*/
 /*==========Pricing CSS Start==========*/
 .pricing-area .save-m-wrapper {
-  background: var(--primary);
+  background: linear-gradient(180deg, #0f172a 100%, #151F49 100%);
 }
 .com-card {
   background: var(--off-white);
