@@ -1,0 +1,21 @@
+<svg width="211" height="148"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect opacity="0.3" x="0.5" y="0.5" width="211" height="147" rx="3.5" stroke="#475569" />
+                  <path d="M47 12H196C198.209 12 200 13.7909 200 16V28H47V12Z" fill="#E3E5E9" />
+                  <path d="M47.25 12.25H196C198.071 12.25 199.75 13.9289 199.75 16V27.75H47.25V12.25Z" stroke="#475569"
+                    stroke-opacity="0.3" stroke-width="0.5" />
+                  <path d="M47 124H200V132C200 134.209 198.209 136 196 136H47V124Z" fill="#E3E5E9" />
+                  <path d="M47.25 124.25H199.75V132C199.75 134.071 198.071 135.75 196 135.75H47.25V124.25Z"
+                    stroke="#475569" stroke-opacity="0.3" stroke-width="0.5" />
+                  <path d="M47 33H200V119H47V33Z" fill="#E3E5E9" />
+                  <path d="M47.25 33.25H199.75V118.75H47.25V33.25Z" stroke="#475569" stroke-opacity="0.3"
+                    stroke-width="0.5" />
+                  <path d="M12 16C12 13.7909 13.7909 12 16 12H42V136H16C13.7909 136 12 134.209 12 132V16Z"
+                    fill="#E3E5E9" />
+                  <path
+                    d="M16 12.25H41.75V135.75H16C13.9289 135.75 12.25 134.071 12.25 132V16C12.25 13.9289 13.9289 12.25 16 12.25Z"
+                    stroke="#475569" stroke-opacity="0.3" stroke-width="0.5" />
+                  <rect x="16" y="20" width="22" height="8" rx="4" fill="#F1F5F9" />
+                  <rect x="16" y="52" width="22" height="4" rx="2" fill="#F1F5F9" />
+                  <rect x="16" y="60" width="22" height="4" rx="2" fill="#F1F5F9" />
+                  <rect x="16" y="68" width="22" height="4" rx="2" fill="#F1F5F9" />
+                </svg>

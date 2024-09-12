@@ -1940,6 +1940,14 @@ ul {
   fill: var(--off-white);
 }
 
+.creative-layout-carousel .image-layout {
+  
+}
+.creative-layout-carousel .image-layout img{
+  width: 100%;
+  height: 100%;
+  
+}
 .creative-layout-carousel.owl-carousel {
   position: relative;
 }

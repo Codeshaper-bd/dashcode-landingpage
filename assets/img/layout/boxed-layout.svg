@@ -1,0 +1,8 @@
+                <svg width="211" height="148"  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect opacity="0.3" x="0.5" y="0.5" width="211" height="147" rx="3.5" stroke="#475569" />
+                  <path d="M30 16C30 13.7909 31.7909 12 34 12H179C181.209 12 183 13.7909 183 16V28H30V16Z"
+                    fill="#E3E5E9" />
+                  <path d="M30 124H183V132C183 134.209 181.209 136 179 136H34C31.7909 136 30 134.209 30 132V124Z"
+                    fill="#E3E5E9" />
+                  <path d="M30 33H183V119H30V33Z" fill="#E3E5E9" />
+                </svg>
