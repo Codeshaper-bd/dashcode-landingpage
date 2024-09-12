@@ -143,11 +143,12 @@ $('.partner-carousel').owlCarousel({
             }
             $(this).addClass('active');
         });
-        var FeaturesOwl = $('#features .owl-carousel');
+        var FeaturesOwl = $("#features .creative-layout-carousel.owl-carousel");
         FeaturesOwl.owlCarousel({
-            items: 1,
+            items: 6,
             loop: true,
-            autoplay: false,
+					autoplay: true,
+						autoplayTimeout: 3000,
             center: true,
             margin: 10,
             URLhashListener: true,
@@ -158,6 +159,21 @@ $('.partner-carousel').owlCarousel({
             '<i class="fa fa-arrow-left"></i>',
             '<i class="fas fa-arrow-right"></i>',
             ],
+            addClassActive: true,
+			
+        });
+        var FeaturesOwl = $("#features .creative-carousel.owl-carousel");
+        FeaturesOwl.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: false,
+            center: true,
+            margin: 10,
+            URLhashListener: true,
+            startPosition: 'URLHash',
+            dots: false,
+            nav: false,
+           
             addClassActive: true,
 			
         });
