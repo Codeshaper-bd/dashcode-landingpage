@@ -1843,7 +1843,47 @@ ul {
   grid-gap: 20px;
   padding-bottom: 20px;
 }
-.components-area .component-content {
+
+.components-area .component-grid-6 .component-content {
+  background: rgba(71, 85, 105, 0.5);
+  backdrop-filter: blur(7.5px);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.components-area .component-grid-6 .component-content:hover {
+  background: rgba(0, 30, 38, 1);
+  border-radius: 6px;
+  border: 1px solid;
+  box-shadow: rgba(15, 23, 42, 0.18);
+  border-image-source: linear-gradient(
+    90deg,
+    #082f90 0%,
+    #3b82f6 37%,
+    #3b82f6 65.28%,
+    #082f90 100%
+  );
+  border-image-slice: 1;
+}
+.components-area .component-grid-6 .component-content .component-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+}
+.components-area .component-grid-6 .component-content .component-img {
+  height: 40px;
+  width: 40px;
+}
+.components-area .component-grid-6 .component-content .component-img img {
+  height: 100%;
+  width: 100%;
+}
+/* .components-area .component-content {
   background: rgba(71, 85, 105, 0.5);
   backdrop-filter: blur(7.5px);
   border-radius: 6px;
@@ -1856,6 +1896,7 @@ ul {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
+  padding: 0 45px;
 }
 .components-area .component-content::after {
   content: "";
@@ -1880,7 +1921,7 @@ ul {
 }
 .components-area .component-content:hover::after {
   display: block;
-}
+} */
 /*==========Component CSS End==========*/
 /*==========Creative CSS Start==========*/
 .creative-area .creative-grid-9 {
@@ -2451,7 +2492,7 @@ h3.price-title {
     max-width: 40px;
     height: 40px;
   }
-  .components-area .component-img.pb-15 {
+  .components-area .component-img .pb-15 {
     padding-bottom: 10px;
   }
 
